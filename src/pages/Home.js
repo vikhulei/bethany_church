@@ -54,7 +54,7 @@ const BottomText = styled.div`
 
 const NoNeed = styled.p`
   font-family: "Rosarivo";
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: white;
   margin-left: 100px;
   text-align: center;
