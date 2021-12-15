@@ -25,6 +25,40 @@ const Logo = styled.img`
   width: 100px;
 `;
 
+const MainText = styled.div`
+  position: absolute;
+  top: 20vh;
+  left: 10vw;
+`;
+
+const Welcome = styled.p`
+  font-family: "Rosarivo";
+  font-size: 5rem;
+  color: white;
+`;
+
+const ComeAs = styled.p`
+  font-family: "Rosarivo";
+  font-size: 3rem;
+  font-style: italic;
+  color: white;
+  margin-left: 100px;
+`;
+
+const BottomText = styled.div`
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+`;
+
+const NoNeed = styled.p`
+  font-family: "Rosarivo";
+  font-size: 2.5rem;
+  color: white;
+  margin-left: 100px;
+  text-align: center;
+`;
+
 const Home = () => {
   return (
     <>
@@ -32,6 +66,15 @@ const Home = () => {
         <MainPictureImg src={church_main} alt="church_main" />
       </MainPicture>
       <Logo src={bethany} />
+      <MainText>
+        <Welcome>Welcome</Welcome>
+        <ComeAs>come as you are</ComeAs>
+      </MainText>
+      <BottomText>
+        <NoNeed>
+          No need to get clever. Simply <br /> tell Him what you are up to
+        </NoNeed>
+      </BottomText>
     </>
   );
 };
