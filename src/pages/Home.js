@@ -1,5 +1,6 @@
 import React from "react";
 import church_main from "../assets/church_main.jpg";
+import bethany from "../assets/bethany.png";
 import styled from "styled-components";
 
 const MainPicture = styled.div`
@@ -17,12 +18,20 @@ const MainPictureImg = styled.img`
   object-fit: cover;
 `;
 
+const Logo = styled.img`
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+`;
+
 const Home = () => {
   return (
     <>
       <MainPicture>
         <MainPictureImg src={church_main} alt="church_main" />
       </MainPicture>
+      <Logo src={bethany} />
     </>
   );
 };
