@@ -35,6 +35,7 @@ const Welcome = styled.p`
   font-family: "Rosarivo";
   font-size: 5rem;
   color: white;
+  line-height: 1;
 `;
 
 const ComeAs = styled.p`
@@ -57,6 +58,7 @@ const NoNeed = styled.p`
   color: white;
   margin-left: 100px;
   text-align: center;
+  text-shadow: black 0px 0px 50px;
 `;
 
 const Home = () => {
