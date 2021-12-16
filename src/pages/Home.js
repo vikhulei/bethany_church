@@ -23,7 +23,7 @@ const Logo = styled.img`
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 200px;
+  width: 180px;
 `;
 
 const MainText = styled.div`
