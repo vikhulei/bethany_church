@@ -1,9 +1,14 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.mainPicture {
+.App {
+  font-family: sans-serif;
+}
+
+/* .mainPicture {
   position: absolute;
   top: 0;
   left: 0;
@@ -15,5 +20,5 @@
 .mainPicture img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-}
+  object-fit: cover;
+} */
