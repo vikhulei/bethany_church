@@ -23,7 +23,7 @@ const Logo = styled.img`
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 100px;
+  width: 200px;
 `;
 
 const MainText = styled.div`
@@ -34,14 +34,14 @@ const MainText = styled.div`
 
 const Welcome = styled.p`
   font-family: "Rosarivo";
-  font-size: 5rem;
+  font-size: 7vw;
   color: white;
   line-height: 1;
 `;
 
 const ComeAs = styled.p`
   font-family: "Rosarivo";
-  font-size: 3rem;
+  font-size: 4vw;
   font-style: italic;
   color: white;
   margin-left: 100px;
@@ -55,7 +55,7 @@ const BottomText = styled.div`
 
 const NoNeed = styled.p`
   font-family: "Rosarivo";
-  font-size: 2.3rem;
+  font-size: 3vw;
   color: white;
   margin-left: 100px;
   text-align: center;
