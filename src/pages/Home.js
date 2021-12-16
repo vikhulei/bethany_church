@@ -34,14 +34,14 @@ const MainText = styled.div`
 
 const Welcome = styled.p`
   font-family: "Rosarivo";
-  font-size: 7vw;
+  font-size: calc(4rem + 3vw);
   color: white;
   line-height: 1;
 `;
 
 const ComeAs = styled.p`
   font-family: "Rosarivo";
-  font-size: 4vw;
+  font-size: calc(2rem + 2vw);
   font-style: italic;
   color: white;
   margin-left: 100px;
@@ -55,7 +55,7 @@ const BottomText = styled.div`
 
 const NoNeed = styled.p`
   font-family: "Rosarivo";
-  font-size: 3vw;
+  font-size: calc(1.5rem + 1vw);
   color: white;
   margin-left: 100px;
   text-align: center;
