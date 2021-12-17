@@ -9,7 +9,6 @@ const NavWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   width: 50vw;
-  background-color: lightcyan;
 `;
 
 const NavLink = styled(Link)`

@@ -1,7 +1,6 @@
 import React from "react";
 import church_main from "../assets/church_main.jpg";
 import bethany from "../assets/bethany.png";
-import calendar from "../assets/calendar.png";
 import styled from "styled-components";
 
 const MainPicture = styled.div`
@@ -23,7 +22,7 @@ const Logo = styled.img`
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 180px;
+  width: 160px;
 `;
 
 const MainText = styled.div`
