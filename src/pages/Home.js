@@ -20,9 +20,9 @@ const MainPictureImg = styled.img`
 
 const Logo = styled.img`
   position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 160px;
+  top: 5px;
+  left: 5px;
+  width: 100px;
 `;
 
 const MainText = styled.div`
