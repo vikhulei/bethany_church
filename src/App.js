@@ -8,9 +8,6 @@ import Services from "./pages/Services";
 import Contacts from "./pages/Contacts";
 
 const Wrapper = styled.div`
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   position: absolute;
   padding-top: 40px;
   width: 100vw;
@@ -26,7 +23,7 @@ export default function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<Home/>} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/pages/home" element={<Home />} />
           <Route path="/pages/about" element={<About />} />
           <Route path="/pages/services" element={<Services />} />
