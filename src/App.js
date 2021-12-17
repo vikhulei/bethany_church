@@ -26,6 +26,7 @@ export default function App() {
       <Router>
         <Navbar />
         <Routes>
+          <Route exact path="/" element={<Home/>} />
           <Route path="/pages/home" element={<Home />} />
           <Route path="/pages/about" element={<About />} />
           <Route path="/pages/services" element={<Services />} />
