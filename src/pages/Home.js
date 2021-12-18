@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
 import church_main from "../assets/church_main.jpg";
+import church_main_mobile from "../assets/church_main_mobile.jpg";
 import bethany from "../assets/bethany.png";
 import styled from "styled-components";
 
@@ -61,15 +62,17 @@ const NoNeed = styled.p`
   text-shadow: black 0px 0px 50px;
 `;
 
-const Home = () => {
+const Home = ( {mobileVersion} ) => {
+  console.log(mobileVersion)
   return (
     <>
       <MainPicture>
-        <MainPictureImg src={church_main} alt="church_main" />
+        {mobileVersion ? 
+        <MainPictureImg src={church_main}  alt="church_main" /> : <MainPictureImg src={church_main_mobile}  alt="church_main" /> }
       </MainPicture>
       <Logo src={bethany} />
       <MainText>
-        <Welcome>Welcome</Welcome>
+      <Welcome>Welcome</Welcome>
         <ComeAs>come as you are</ComeAs>
       </MainText>
       <BottomText>
