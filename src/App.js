@@ -37,7 +37,7 @@ export default function App() {
   return (
     <Wrapper className="App">
       <Router>
-        <Navbar />
+        {mobileVersion ? <Navbar /> : null}
         <Routes>
           <Route
             exact
