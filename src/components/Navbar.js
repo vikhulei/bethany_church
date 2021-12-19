@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import * as FontAwesome from "react-icons/fa"
 
-const NavWrapper = styled.div`
+const TopNav = styled.div`
   position: absolute;
   top: 10px;
   right: 10px;
@@ -12,9 +12,8 @@ const NavWrapper = styled.div`
   width: 50vw;
 `;
 
-const NavLink = styled(Link)`
+const TopNavLink = styled(Link)`
   text-decoration: none;
-  font-family: "Rosarivo";
   font-size: 1rem;
   color: black;
 `;
@@ -28,20 +27,50 @@ const HamWrapper = styled.div `
     cursor: pointer;
   };
 `
+const SideNav = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3rem;
+  color: red;
+  background-color: rgba(255,255,255, 0.9);
+  z-index: 99;
+`;
+
+const SideNavLink = styled(Link)`
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+`;
 
 const Navbar = ( {mobileVersion} ) => {
   return (
     <div>
       {mobileVersion ?
-      <NavWrapper>
-        <NavLink to="/pages/home">Home</NavLink>
-        <NavLink to="/pages/about">About</NavLink>
-        <NavLink to="/pages/services">Services</NavLink>
-        <NavLink to="/pages/contacts">Contacts</NavLink>
-      </NavWrapper>
-      : <HamWrapper>
+      <TopNav>
+        <TopNavLink to="/pages/home">Home</TopNavLink>
+        <TopNavLink to="/pages/about">About</TopNavLink>
+        <TopNavLink to="/pages/services">Services</TopNavLink>
+        <TopNavLink to="/pages/contacts">Contacts</TopNavLink>
+      </TopNav>
+      : <>
+      <HamWrapper>
         <FontAwesome.FaBars onClick={() => alert()}/>
-      </HamWrapper>}
+      </HamWrapper>
+      <SideNav>
+        <SideNavLink to="/pages/home">Home</SideNavLink>
+        <SideNavLink to="/pages/about">About</SideNavLink>
+        <SideNavLink to="/pages/services">Services</SideNavLink>
+        <SideNavLink to="/pages/contacts">Contacts</SideNavLink>
+      </SideNav>
+      </>
+      }
     </div>
   );
 };
