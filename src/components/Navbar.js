@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import * as FontAwesome from "react-icons/fa"
-import * as Grommet from "react-icons/gr"
+import * as FontAwesome from "react-icons/fa";
+import * as Grommet from "react-icons/gr";
 
 const TopNav = styled.div`
   position: absolute;
@@ -19,15 +19,16 @@ const TopNavLink = styled(Link)`
   color: black;
 `;
 
-const HamWrapper = styled.div `
+const HamWrapper = styled.div`
   position: absolute;
   top: 10px;
   right: 10px;
   font-size: 2rem;
   &:hover {
     cursor: pointer;
-  };
-`
+  }
+`;
+
 const SideNav = styled.div`
   position: absolute;
   top: 0;
@@ -39,7 +40,7 @@ const SideNav = styled.div`
   justify-content: space-around;
   align-items: center;
   font-size: 3rem;
-  background-color: rgba(255,255,255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   z-index: 99;
 `;
 
@@ -49,31 +50,15 @@ const SideNavLink = styled(Link)`
   color: black;
 `;
 
-const Navbar = ( {mobileVersion} ) => {
+const Navbar = ({ mobileVersion }) => {
   return (
     <div>
-      {mobileVersion ?
       <TopNav>
         <TopNavLink to="/pages/home">Home</TopNavLink>
         <TopNavLink to="/pages/about">About</TopNavLink>
         <TopNavLink to="/pages/services">Services</TopNavLink>
         <TopNavLink to="/pages/contacts">Contacts</TopNavLink>
       </TopNav>
-      : <>
-      <HamWrapper>
-        <FontAwesome.FaBars onClick={() => alert("open")}/>
-      </HamWrapper>
-      <SideNav>
-      <HamWrapper>
-        <Grommet.GrClose onClick={() => alert("close")}/>
-      </HamWrapper>
-        <SideNavLink to="/pages/home">Home</SideNavLink>
-        <SideNavLink to="/pages/about">About</SideNavLink>
-        <SideNavLink to="/pages/services">Services</SideNavLink>
-        <SideNavLink to="/pages/contacts">Contacts</SideNavLink>
-      </SideNav>
-      </>
-      }
     </div>
   );
 };

@@ -3,6 +3,7 @@ import "./styles.css";
 import styled from "styled-components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -37,7 +38,7 @@ export default function App() {
   return (
     <Wrapper className="App">
       <Router>
-        <Navbar mobileVersion={mobileVersion}/>
+        {mobileVersion ? <Navbar mobileVersion={mobileVersion} /> : <Sidebar />}
         <Routes>
           <Route
             exact
