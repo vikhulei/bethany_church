@@ -26,7 +26,7 @@ const SideNav = styled.div`
   justify-content: space-around;
   align-items: center;
   font-size: 3rem;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(170, 130, 130, 0.93);
   z-index: 99;
 `;
 
