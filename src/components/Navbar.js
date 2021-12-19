@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import * as FontAwesome from "react-icons/fa"
+import * as Grommet from "react-icons/gr"
 
 const TopNav = styled.div`
   position: absolute;
@@ -38,7 +39,6 @@ const SideNav = styled.div`
   justify-content: space-around;
   align-items: center;
   font-size: 3rem;
-  color: red;
   background-color: rgba(255,255,255, 0.9);
   z-index: 99;
 `;
@@ -61,9 +61,12 @@ const Navbar = ( {mobileVersion} ) => {
       </TopNav>
       : <>
       <HamWrapper>
-        <FontAwesome.FaBars onClick={() => alert()}/>
+        <FontAwesome.FaBars onClick={() => alert("open")}/>
       </HamWrapper>
       <SideNav>
+      <HamWrapper>
+        <Grommet.GrClose onClick={() => alert("close")}/>
+      </HamWrapper>
         <SideNavLink to="/pages/home">Home</SideNavLink>
         <SideNavLink to="/pages/about">About</SideNavLink>
         <SideNavLink to="/pages/services">Services</SideNavLink>
