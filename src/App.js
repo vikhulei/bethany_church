@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import "./styles.css";
 import styled from "styled-components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -19,27 +19,35 @@ const Wrapper = styled.div`
 `;
 
 export default function App() {
-  const [mobileVersion, setMobileVersion] = useState(false)
+  const [mobileVersion, setMobileVersion] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-    if(window.innerWidth > 700) {
-      setMobileVersion(true)
-    } else {
-      setMobileVersion(false)
-    } }
+      if (window.innerWidth > 700) {
+        setMobileVersion(true);
+      } else {
+        setMobileVersion(false);
+      }
+    };
     handleResize();
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize)
-  }, [])
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <Wrapper className="App">
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<Home mobileVersion={mobileVersion} />} />
-          <Route path="/pages/home" element={<Home mobileVersion={mobileVersion}/>} />
+          <Route
+            exact
+            path="/"
+            element={<Home mobileVersion={mobileVersion} />}
+          />
+          <Route
+            path="/pages/home"
+            element={<Home mobileVersion={mobileVersion} />}
+          />
           <Route path="/pages/about" element={<About />} />
           <Route path="/pages/services" element={<Services />} />
           <Route path="/pages/contacts" element={<Contacts />} />
