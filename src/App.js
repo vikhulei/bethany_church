@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./styles.css";
 import styled from "styled-components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import * as FontAwesome from "react-icons/fa"
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -37,7 +38,7 @@ export default function App() {
   return (
     <Wrapper className="App">
       <Router>
-        {mobileVersion ? <Navbar /> : null}
+        {mobileVersion ? <Navbar /> : <FontAwesome.FaBars/>}
         <Routes>
           <Route
             exact
