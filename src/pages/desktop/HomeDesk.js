@@ -1,10 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
+import church_main from "../../assets/church_main.jpg";
+import bethany from "../../assets/bethany.png";
 import styled from "styled-components";
-import church_main from "../assets/church_main.jpg";
-import church_main_mobile from "../assets/church_main_mobile.jpg";
-import bethany from "../assets/bethany.png";
-import HomeMobile from "./mobile/HomeMobile";
-import HomeDesk from "./desktop/HomeDesk";
 
 const MainPicture = styled.div`
   position: absolute;
@@ -32,12 +29,12 @@ const MainText = styled.div`
   position: absolute;
   top: 20vh;
   left: 10vw;
+  color: white;
 `;
 
 const Welcome = styled.p`
   font-family: "Rosarivo";
   font-size: calc(4rem + 3vw);
-  color: white;
   line-height: 1;
 `;
 
@@ -45,7 +42,6 @@ const ComeAs = styled.p`
   font-family: "Rosarivo";
   font-size: calc(2rem + 2vw);
   font-style: italic;
-  color: white;
   margin-left: 100px;
 `;
 
@@ -64,16 +60,11 @@ const NoNeed = styled.p`
   text-shadow: black 0px 0px 50px;
 `;
 
-const Home = ({ mobileVersion }) => {
+const HomeDesk = () => {
   return (
     <>
-      {mobileVersion ? <HomeMobile /> : <HomeDesk />}
-      {/* <MainPicture>
-        {mobileVersion ? (
-          <MainPictureImg src={church_main} alt="church_main" />
-        ) : (
-          <MainPictureImg src={church_main_mobile} alt="church_main" />
-        )}
+      <MainPicture>
+        <MainPictureImg src={church_main} alt="church_main" />
       </MainPicture>
       <Logo src={bethany} />
       <MainText>
@@ -84,9 +75,9 @@ const Home = ({ mobileVersion }) => {
         <NoNeed>
           No need to get clever. Simply <br /> tell Him what you are up to
         </NoNeed>
-      </BottomText> */}
+      </BottomText>
     </>
   );
 };
 
-export default Home;
+export default HomeDesk;

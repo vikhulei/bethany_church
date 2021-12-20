@@ -20,14 +20,14 @@ const Wrapper = styled.div`
 `;
 
 export default function App() {
-  const [mobileVersion, setMobileVersion] = useState(false);
+  const [mobileVersion, setMobileVersion] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 700) {
-        setMobileVersion(true);
-      } else {
         setMobileVersion(false);
+      } else {
+        setMobileVersion(true);
       }
     };
     handleResize();
@@ -38,7 +38,7 @@ export default function App() {
   return (
     <Wrapper className="App">
       <Router>
-        {mobileVersion ? <Navbar mobileVersion={mobileVersion} /> : <Sidebar />}
+        {mobileVersion ? <Sidebar /> : <Navbar mobileVersion={mobileVersion} />}
         <Routes>
           <Route
             exact
