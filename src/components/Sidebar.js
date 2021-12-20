@@ -36,6 +36,9 @@ const SideNavLink = styled(Link)`
   text-decoration: none;
   font-size: 2rem;
   color: black;
+  &:active {
+    background-color: red;
+  }
 `;
 
 const Sidebar = ({ mobileVersion }) => {
