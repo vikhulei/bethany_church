@@ -8,7 +8,7 @@ const HamWrapper = styled.div`
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 2rem;
+  font-size: 2.5rem;
   &:hover {
     cursor: pointer;
   }
@@ -17,16 +17,18 @@ const HamWrapper = styled.div`
 const SideNav = styled.div`
   position: absolute;
   top: 0;
-  right: ${({ sideBar }) => (sideBar ? "0" : "-60%")};
-  transition: 500ms;
+
   width: 60vw;
   height: 100vh;
+  /* display: ${({ sideBar }) => (sideBar ? "flex" : "none")}; */
   display: flex;
+  right: ${({ sideBar }) => (sideBar ? "0" : "-60vw")};
+  transition: 500ms;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   font-size: 3rem;
-  background-color: rgba(170, 130, 130, 0.93);
+  background-color: rgba(194,190,187, 0.93);
   z-index: 99;
 `;
 
