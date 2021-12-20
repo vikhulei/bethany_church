@@ -36,17 +36,25 @@ const SideNavLink = styled(Link)`
   text-decoration: none;
   font-size: 2rem;
   color: darkblue;
-  user-select: none;
+  /* user-select: none; */
   /* background-color: rgba(194, 190, 187, 0.93); */
   &:visited {
     color: darkblue;
-    user-select: none;
+    /* user-select: none; */
   }
   &:active {
-    background-color: transparent;
+    /* background-color: transparent; */
     color: darkblue;
-    user-select: none;
+    /* user-select: none; */
   }
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 `;
 
 const Sidebar = ({ mobileVersion }) => {
