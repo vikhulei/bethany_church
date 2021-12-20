@@ -21,7 +21,7 @@ const SideNav = styled.div`
   transition: 350ms;
   width: 60vw;
   height: 100vh;
-  padding-bottom: 10vh;
+  padding: 10vh 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
