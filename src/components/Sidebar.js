@@ -35,9 +35,8 @@ const SideNav = styled.div`
 const SideNavLink = styled(Link)`
   text-decoration: none;
   font-size: 2rem;
-  color: green;
   &:active {
-    background-color: red;
+    background-color: none;
   }
 `;
 
