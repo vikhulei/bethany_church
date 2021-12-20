@@ -36,7 +36,8 @@ const SideNavLink = styled(Link)`
   text-decoration: none;
   font-size: 2rem;
   &:active {
-    background-color: rgba(194, 190, 187, 0.93);
+    /* background-color: rgba(194, 190, 187, 0.93); */
+    background-color: lightgrey;
   }
 `;
 
