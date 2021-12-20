@@ -40,10 +40,12 @@ const SideNavLink = styled(Link)`
   /* background-color: rgba(194, 190, 187, 0.93); */
   &:visited {
     color: darkblue;
+    user-select: none;
   }
   &:active {
     background-color: transparent;
     color: darkblue;
+    user-select: none;
   }
 `;
 
