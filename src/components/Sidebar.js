@@ -35,9 +35,14 @@ const SideNav = styled.div`
 const SideNavLink = styled(Link)`
   text-decoration: none;
   font-size: 2rem;
+  color: darkblue;
+  background-color: rgba(194, 190, 187, 0.93);
+  &:visited {
+    color: darkblue;
+  }
   &:active {
-    /* background-color: rgba(194, 190, 187, 0.93); */
     background-color: lightgrey;
+    color: darkblue;
   }
 `;
 
