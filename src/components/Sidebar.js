@@ -9,6 +9,7 @@ const HamWrapper = styled.div`
   top: 10px;
   right: 10px;
   font-size: 2.5rem;
+  color: rgb(50, 50, 50);
   &:hover {
     cursor: pointer;
   }
