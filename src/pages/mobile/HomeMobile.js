@@ -47,7 +47,7 @@ const ComeAs = styled.p`
 
 const BottomText = styled.div`
   position: absolute;
-  bottom: 20px;
+  bottom: 100px;
   width: 100%;
   color: white;
 `;
