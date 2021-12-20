@@ -41,7 +41,7 @@ const SideNavLink = styled(Link)`
     color: darkblue;
   }
   &:active {
-    background-color: lightgrey;
+    background-color: transparent;
     color: darkblue;
   }
 `;
