@@ -35,17 +35,13 @@ const SideNav = styled.div`
 const SideNavLink = styled(Link)`
   text-decoration: none;
   font-size: 2rem;
-  color: darkblue;
-  /* user-select: none; */
-  /* background-color: rgba(194, 190, 187, 0.93); */
+  color: black;
   &:visited {
-    color: darkblue;
-    /* user-select: none; */
+    color: black;
   }
   &:active {
-    /* background-color: transparent; */
     color: darkblue;
-    /* user-select: none; */
+    transform: translate(3px, 3px);
   }
 
   -webkit-touch-callout: none;
