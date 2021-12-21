@@ -3,7 +3,7 @@ import styled from "styled-components";
 import collage from "../../assets/collage.jpg";
 
 const PageWrapper = styled.div`
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   height: fit-content;
