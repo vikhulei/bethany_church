@@ -11,7 +11,6 @@ import Contacts from "./pages/Contacts";
 
 const Wrapper = styled.div`
   position: absolute;
-  padding-top: 40px;
   width: 100vw;
   height: 100vh;
   display: flex;

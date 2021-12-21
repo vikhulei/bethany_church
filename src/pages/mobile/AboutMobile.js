@@ -3,7 +3,7 @@ import styled from "styled-components";
 import collage from "../../assets/collage.jpg";
 
 const PageWrapper = styled.div`
-  margin-top: 40px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   height: fit-content;
@@ -49,7 +49,7 @@ const AboutMobile = () => {
         <Title>About Us</Title>
       </TitleWrapper>
       <TextWrapper>
-        <Heading>Denomonation</Heading>
+        <Heading>Affiliation</Heading>
         <MainText>Ukrainian Evangelical Church</MainText>
         <Heading>Brief History</Heading>
         <MainText>

@@ -33,7 +33,7 @@ const AboutDesk = () => {
   return (
     <>
       <TextWrapper>
-        <Heading>Denomonation</Heading>
+        <Heading>Affiliation</Heading>
         <MainText>Ukrainian Evangelical Church</MainText>
         <Heading>Brief History</Heading>
         <MainText>
