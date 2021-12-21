@@ -2,14 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import collage from "../../assets/collage.jpg";
 
-const PageWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: fit-content;
-`;
-
 const TextWrapper = styled.div`
-  margin: 20px;
+  width: 100%;
+  height: 100%;
+  margin: 0 20px;
 `;
 
 const Heading = styled.h2`
@@ -22,7 +18,8 @@ const MainText = styled.p`
 `;
 
 const PhotoWrapper = styled.div`
-  margin: 20px;
+  width: 100%;
+  margin: 30px 20px;
   justify-content: center;
 `;
 
@@ -32,9 +29,9 @@ const Photo = styled.img`
   object-fit: contain;
 `;
 
-const AboutMobile = () => {
+const AboutDesk = () => {
   return (
-    <PageWrapper>
+    <>
       <TextWrapper>
         <Heading>Denomonation</Heading>
         <MainText>Ukrainian Evangelical Church</MainText>
@@ -68,8 +65,8 @@ const AboutMobile = () => {
       <PhotoWrapper>
         <Photo src={collage} alt="collage" />
       </PhotoWrapper>
-    </PageWrapper>
+    </>
   );
 };
 
-export default AboutMobile;
+export default AboutDesk;

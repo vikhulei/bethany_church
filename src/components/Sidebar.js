@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import * as FontAwesome from "react-icons/fa";
 import * as Grommet from "react-icons/gr";
 
-const HamWrapper = styled.div`
+const IconWrapper = styled.div`
   position: absolute;
   top: 10px;
   right: 10px;
@@ -13,6 +13,12 @@ const HamWrapper = styled.div`
   &:hover {
     cursor: pointer;
   }
+`;
+
+const HamWrapper = styled.div`
+  position: fixed;
+  top: 10px;
+  right: 20px;
 `;
 
 const SideNav = styled.div`
@@ -60,13 +66,15 @@ const Sidebar = ({ mobileVersion }) => {
   };
   return (
     <div>
-      <HamWrapper>
-        <FontAwesome.FaBars onClick={showSideBar} />
-      </HamWrapper>
-      <SideNav sideBar={sideBar} onClick={showSideBar}>
+      <IconWrapper>
         <HamWrapper>
-          <Grommet.GrClose onClick={showSideBar} />
+          <FontAwesome.FaBars onClick={showSideBar} />
         </HamWrapper>
+      </IconWrapper>
+      <SideNav sideBar={sideBar} onClick={showSideBar}>
+        <IconWrapper>
+          <Grommet.GrClose onClick={showSideBar} />
+        </IconWrapper>
         <SideNavLink to="/pages/home">Home</SideNavLink>
         <SideNavLink to="/pages/about">About</SideNavLink>
         <SideNavLink to="/pages/services">Services</SideNavLink>

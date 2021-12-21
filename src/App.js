@@ -49,9 +49,18 @@ export default function App() {
             path="/pages/home"
             element={<Home mobileVersion={mobileVersion} />}
           />
-          <Route path="/pages/about" element={<About />} />
-          <Route path="/pages/services" element={<Services />} />
-          <Route path="/pages/contacts" element={<Contacts />} />
+          <Route
+            path="/pages/about"
+            element={<About mobileVersion={mobileVersion} />}
+          />
+          <Route
+            path="/pages/services"
+            element={<Services mobileVersion={mobileVersion} />}
+          />
+          <Route
+            path="/pages/contacts"
+            element={<Contacts mobileVersion={mobileVersion} />}
+          />
         </Routes>
       </Router>
     </Wrapper>
