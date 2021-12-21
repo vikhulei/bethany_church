@@ -4,6 +4,7 @@ import bethany from "../../assets/bethany.png";
 import styled from "styled-components";
 
 const MainPicture = styled.div`
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
@@ -13,8 +14,8 @@ const MainPicture = styled.div`
 `;
 
 const MainPictureImg = styled.img`
-  width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: cover;
 `;
 
@@ -35,7 +36,7 @@ const MainText = styled.div`
 const Welcome = styled.p`
   font-family: "Rosarivo";
   font-size: calc(4rem + 3vw);
-  line-height: 1;
+  /* line-height: 1; */
 `;
 
 const ComeAs = styled.p`
@@ -47,7 +48,7 @@ const ComeAs = styled.p`
 
 const BottomText = styled.div`
   position: absolute;
-  bottom: 20px;
+  bottom: 50px;
   width: 100%;
 `;
 
