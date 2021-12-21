@@ -3,9 +3,19 @@ import styled from "styled-components";
 import collage from "../../assets/collage.jpg";
 
 const PageWrapper = styled.div`
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   height: fit-content;
+`;
+
+const TitleWrapper = styled.div`
+  margin-left: 20px;
+`;
+
+const Title = styled.h1`
+  font-family: "Rosarivo";
+  font-size: calc(2rem + 2vw);
 `;
 
 const TextWrapper = styled.div`
@@ -35,6 +45,9 @@ const Photo = styled.img`
 const AboutMobile = () => {
   return (
     <PageWrapper>
+      <TitleWrapper>
+        <Title>About Us</Title>
+      </TitleWrapper>
       <TextWrapper>
         <Heading>Denomonation</Heading>
         <MainText>Ukrainian Evangelical Church</MainText>
