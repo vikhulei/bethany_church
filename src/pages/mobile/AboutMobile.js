@@ -31,12 +31,12 @@ const MainText = styled.p`
   margin-left: 30px;
 `;
 
-const PhotoWrapper = styled.div`
+const PictureWrapper = styled.div`
   margin: 20px;
   justify-content: center;
 `;
 
-const Photo = styled.img`
+const Picture = styled.img`
   width: 100%;
   max-height: 100%;
   object-fit: contain;
@@ -78,9 +78,9 @@ const AboutMobile = () => {
           and reaching out to the community
         </MainText>
       </TextWrapper>
-      <PhotoWrapper>
-        <Photo src={collage} alt="collage" />
-      </PhotoWrapper>
+      <PictureWrapper>
+        <Picture src={collage} alt="collage" />
+      </PictureWrapper>
     </PageWrapper>
   );
 };
