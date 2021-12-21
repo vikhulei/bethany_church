@@ -4,6 +4,7 @@ import bethany from "../../assets/bethany.png";
 import styled from "styled-components";
 
 const MainPicture = styled.div`
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
