@@ -19,8 +19,21 @@ const Wrapper = styled.div`
   z-index: -99;
 `;
 
+const Pages = styled.div`
+  display: block;
+`;
+
 export default function App() {
   const [mobileVersion, setMobileVersion] = useState(true);
+  const [sideBar, setSideBar] = useState(false);
+
+  const showSideBar = () => {
+    setSideBar(!sideBar);
+  };
+
+  const hideSideBar = () => {
+    setSideBar(false);
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -38,30 +51,36 @@ export default function App() {
   return (
     <Wrapper className="App">
       <Router>
-        {mobileVersion ? <Sidebar /> : <Navbar mobileVersion={mobileVersion} />}
-        <Routes>
-          <Route
-            exact
-            path="/"
-            element={<Home mobileVersion={mobileVersion} />}
-          />
-          <Route
-            path="/pages/home"
-            element={<Home mobileVersion={mobileVersion} />}
-          />
-          <Route
-            path="/pages/about"
-            element={<About mobileVersion={mobileVersion} />}
-          />
-          <Route
-            path="/pages/services"
-            element={<Services mobileVersion={mobileVersion} />}
-          />
-          <Route
-            path="/pages/contacts"
-            element={<Contacts mobileVersion={mobileVersion} />}
-          />
-        </Routes>
+        {mobileVersion ? (
+          <Sidebar sideBar={sideBar} showSideBar={showSideBar} />
+        ) : (
+          <Navbar mobileVersion={mobileVersion} />
+        )}
+        <Pages onClick={hideSideBar}>
+          <Routes>
+            <Route
+              exact
+              path="/"
+              element={<Home mobileVersion={mobileVersion} />}
+            />
+            <Route
+              path="/pages/home"
+              element={<Home mobileVersion={mobileVersion} />}
+            />
+            <Route
+              path="/pages/about"
+              element={<About mobileVersion={mobileVersion} />}
+            />
+            <Route
+              path="/pages/services"
+              element={<Services mobileVersion={mobileVersion} />}
+            />
+            <Route
+              path="/pages/contacts"
+              element={<Contacts mobileVersion={mobileVersion} />}
+            />
+          </Routes>
+        </Pages>
       </Router>
     </Wrapper>
   );

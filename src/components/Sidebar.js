@@ -59,11 +59,7 @@ const SideNavLink = styled(Link)`
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 `;
 
-const Sidebar = ({ mobileVersion }) => {
-  const [sideBar, setSideBar] = useState(false);
-  const showSideBar = () => {
-    setSideBar(!sideBar);
-  };
+const Sidebar = ({ sideBar, showSideBar }) => {
   return (
     <div>
       <IconWrapper>
