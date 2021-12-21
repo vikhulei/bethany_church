@@ -2,10 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import calendar from "../../assets/calendar.png";
 
-const PageWrapper = styled.div`
-  /* overflow: hidden; */
-`;
-
 const PictureWrapper = styled.div`
   position: absolute;
   text-align: center;
@@ -38,7 +34,7 @@ const MainText = styled.p`
 
 const ServicesMobile = () => {
   return (
-    <PageWrapper>
+    <>
       <PictureWrapper>
         <Picture src={calendar} alt="calendar" />
       </PictureWrapper>
@@ -61,7 +57,7 @@ const ServicesMobile = () => {
         <Heading>Dec 31</Heading>
         <MainText>Is God always love? Reflection on Epistle of John</MainText>
       </TextWrapper>
-    </PageWrapper>
+    </>
   );
 };
 
