@@ -54,9 +54,10 @@ const BottomText = styled.div`
 
 const NoNeed = styled.p`
   font-family: "Rosarivo";
-  font-size: calc(1rem + 2vw);
+  font-size: calc(1rem + 1.2vw);
   text-align: center;
-  text-shadow: black 0px 0px 50px;
+  text-shadow: 1px 1px 5px black, 1px 1px 5px black, 1px 1px 5px black,
+    1px 1px 5px black;
 `;
 
 const HomeMobile = () => {
