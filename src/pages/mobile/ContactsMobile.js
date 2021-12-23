@@ -34,15 +34,22 @@ const Button = styled.button`
 
 const Footer = styled.footer`
   width: 100%;
-  height: 50px;
+  height: 100px;
   padding: 0 30px;
-  margin: 50px auto 10px auto;
+  margin: 50px auto 30px auto;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 `;
 
-const IconWrapper = styled.a`
+const IconsWrapper = styled.div`
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
+`;
+
+const Ancor = styled.a`
   font-size: 1.5rem;
   display: flex;
 `;
@@ -58,16 +65,15 @@ const ContactsMobile = () => {
       </Form>
       <Footer>
         <p>+38063 793-1590</p>
-        <IconWrapper
-          href="https://www.facebook.com/bethany.nivki"
-          target="_blank"
-        >
-          <FontAwesome.FaFacebook />
-        </IconWrapper>
-        <IconWrapper href="#">
-          <FontAwesome.FaInstagram />
-        </IconWrapper>
         <p>vikhulei@gmail.com</p>
+        <IconsWrapper>
+          <Ancor href="https://www.facebook.com/bethany.nivki" target="_blank">
+            <FontAwesome.FaFacebook />
+          </Ancor>
+          <Ancor href="#">
+            <FontAwesome.FaInstagram />
+          </Ancor>
+        </IconsWrapper>
       </Footer>
     </>
   );
