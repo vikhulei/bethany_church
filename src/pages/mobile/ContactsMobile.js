@@ -20,10 +20,13 @@ const Label = styled.label`
   /* text-align: left; */
 `;
 
-const Input = styled.input`
+const Input = styled.textarea`
   height: 30vh;
-  line-height: 10px;
-  justify-self: left;
+  padding: 5px;
+  /* display: flex;
+  align-items: top;
+  justify-content: center; */
+  width: 100%;
 `;
 const Button = styled.button`
   width: 130px;
@@ -59,9 +62,11 @@ const ContactsMobile = () => {
     <>
       <Contacts src={contact} alt="contact_us" />
       <Form>
-        <Label>Your message:</Label>
-        <Input type="text" />
-        <Button>Send</Button>
+        <Label for="input">Your message:</Label>
+        <Input id="input" />
+        <Button type="submit" onClick={() => alert("input")}>
+          Send
+        </Button>
       </Form>
       <Footer>
         <p>+38063 793-1590</p>
