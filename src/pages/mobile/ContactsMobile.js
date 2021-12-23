@@ -70,7 +70,7 @@ const ContactsMobile = () => {
         <Button type="submit">Send</Button>
       </Form>
       <Footer>
-        <p>+38063 793-1590</p>
+        <p>+380637931590</p>
         <a href="mailto:vikhulei@gmail.com">vikhulei@gmail.com</a>
         <IconsWrapper>
           <Ancor href="https://www.facebook.com/bethany.nivki" target="_blank">
