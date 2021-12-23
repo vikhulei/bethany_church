@@ -14,7 +14,6 @@ const TitleWrapper = styled.div`
 `;
 
 const Title = styled.h1`
-  font-family: "Rosarivo";
   font-size: calc(2rem + 2vw);
 `;
 

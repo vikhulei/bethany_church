@@ -18,7 +18,9 @@ const TitleWrapper = styled.div`
   margin-left: 20px;
 `;
 
-const Title = styled.h1``;
+const Title = styled.h1`
+  font-size: calc(2rem + 2vw);
+`;
 
 const TextWrapper = styled.div`
   margin-top: 50px;
@@ -51,11 +53,11 @@ const ServicesMobile = () => {
         <Heading>Dec 10</Heading>
         <MainText>Is God always love? Reflection on Epistle of John</MainText>
         <Heading>Dec 17</Heading>
-        <MainText>Is God always love? Reflection on Epistle of John</MainText>
+        <MainText>Sufferings for the faith today - First Peter</MainText>
         <Heading>Dec 24</Heading>
-        <MainText>Is God always love? Reflection on Epistle of John</MainText>
+        <MainText>Thoughts about modern church from Second Peter</MainText>
         <Heading>Dec 31</Heading>
-        <MainText>Is God always love? Reflection on Epistle of John</MainText>
+        <MainText>Epistle of Judah on heresies </MainText>
       </TextWrapper>
     </>
   );
