@@ -21,7 +21,6 @@ const Title = styled.h1`
 
 const TextWrapper = styled.div`
   margin: 100px 20px 50px 20px;
-  width: 100vw;
   text-align: center;
 `;
 
