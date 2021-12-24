@@ -14,24 +14,23 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   margin: 0 30px;
+  font-size: 0.8rem;
+  color: blue;
 `;
 
 const Label = styled.label`
-  font-size: 0.8rem;
-  color: blue;
-  /* text-align: left; */
+  /* font-size: 0.8rem; */
 `;
 
-const Input = styled.input``;
+const Input = styled.input`
+  font-size: 0.8rem;
+`;
 
 const TextArea = styled.textarea`
   height: 30vh;
   padding: 5px;
   margin-top: 5px;
-  /* display: flex;
-  align-items: top;
-  justify-content: center; */
-  width: 100%;
+  font-size: 0.8rem;
 `;
 const Button = styled.button`
   width: 130px;
@@ -43,7 +42,6 @@ const Button = styled.button`
 const Footer = styled.footer`
   width: 100%;
   height: 100px;
-  padding: 0 30px;
   margin: 50px auto 30px auto;
   display: flex;
   flex-direction: column;
@@ -51,28 +49,21 @@ const Footer = styled.footer`
   align-items: center;
 `;
 
-const IconsWrapper = styled.div`
-  width: 70px;
-  display: flex;
-  justify-content: space-between;
-`;
-
 const Ancor = styled.a`
   font-size: 1.5rem;
-  display: flex;
 `;
 
 const ContactsMobile = () => {
-  const submit = (event) => {
-    alert("You wrote: " + event.target[0].value);
-  };
-
   return (
     <>
       <Contacts src={contact} alt="contact_us" />
       <Form action="https://formsubmit.co/vikhulei@gmail.com" method="POST">
-        <Label>Your email address:</Label>
-        <Input type="email" name="email"></Input>
+        <Input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Type your email address here"
+        ></Input>
         <TextArea
           id="textarea"
           type="text"
