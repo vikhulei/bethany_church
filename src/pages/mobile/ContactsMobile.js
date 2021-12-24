@@ -60,13 +60,15 @@ const Ancor = styled.a`
 const ContactsMobile = () => {
   const submit = (event) => {
     alert("You wrote: " + event.target[0].value);
+    event.target[0].value = `Your contacts (email, tel): \nYour message: `;
   };
+
   return (
     <>
       <Contacts src={contact} alt="contact_us" />
       <Form onSubmit={submit}>
-        <Label for="input">Your message:</Label>
-        <Input id="input" />
+        <Label for="input"></Label>
+        <Input id="input">{`Your contacts (email, tel): \n \nYour message: `}</Input>
         <Button type="submit">Send</Button>
       </Form>
       <Footer>
