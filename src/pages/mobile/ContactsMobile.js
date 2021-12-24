@@ -21,7 +21,9 @@ const Label = styled.label`
   /* text-align: left; */
 `;
 
-const Input = styled.textarea`
+const Input = styled.input``;
+
+const TextArea = styled.textarea`
   height: 30vh;
   padding: 5px;
   margin-top: 5px;
@@ -74,13 +76,13 @@ const ContactsMobile = () => {
         onSubmit={submit}
       >
         <Label for="input">Your email address:</Label>
-        <input type="text" id="input" name="email"></input>
-        <Input
+        <Input type="text" id="input" name="email"></Input>
+        <TextArea
           id="textarea"
           type="text"
           name="text"
           placeholder="Type your message here"
-        ></Input>
+        ></TextArea>
         <Button type="submit">Send</Button>
       </Form>
       <Footer>
