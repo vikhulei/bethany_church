@@ -36,7 +36,7 @@ export default function App() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 700) {
+      if (window.innerWidth > 600) {
         setMobileVersion(false);
       } else {
         setMobileVersion(true);
