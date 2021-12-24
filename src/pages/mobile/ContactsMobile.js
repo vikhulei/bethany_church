@@ -65,6 +65,7 @@ const ContactsMobile = () => {
           name="text"
           placeholder="Type your message here"
         ></TextArea>
+        <input type="hidden" name="_captcha" value="false" />
         <Button type="submit">Send</Button>
       </Form>
       <Footer>
