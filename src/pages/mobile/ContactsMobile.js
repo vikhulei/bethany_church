@@ -17,6 +17,7 @@ const Form = styled.form`
 `;
 
 const Label = styled.label`
+  font-size: 0.8rem;
   /* text-align: left; */
 `;
 
@@ -60,15 +61,25 @@ const Ancor = styled.a`
 const ContactsMobile = () => {
   const submit = (event) => {
     alert("You wrote: " + event.target[0].value);
-    event.target[0].value = `Your contacts (email, tel): \nYour message: `;
+    event.target[0].value = "";
   };
 
   return (
     <>
       <Contacts src={contact} alt="contact_us" />
-      <Form onSubmit={submit}>
-        <Label for="input"></Label>
-        <Input id="input">{`Your contacts (email, tel): \n \nYour message: `}</Input>
+      <Form
+        action="https://formsubmit.co/vikhulei@gmail.com"
+        method="POST"
+        onSubmit={submit}
+      >
+        <Label for="input">Your email address:</Label>
+        <input type="email" id="input" />
+        <Input
+          id="textarea"
+          type="email"
+          name="email"
+          placeholder="Type your message here"
+        ></Input>
         <Button type="submit">Send</Button>
       </Form>
       <Footer>
@@ -83,3 +94,5 @@ const ContactsMobile = () => {
 };
 
 export default ContactsMobile;
+
+// {`Your contacts (email, tel): \n \nYour message: `}
