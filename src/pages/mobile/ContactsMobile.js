@@ -76,8 +76,8 @@ const ContactsMobile = () => {
         method="POST"
         onSubmit={submit}
       >
-        <Label for="input">Your email address:</Label>
-        <Input type="text" id="input" name="email"></Input>
+        <Label>Your email address:</Label>
+        <Input type="email" name="email"></Input>
         <TextArea
           id="textarea"
           type="text"
