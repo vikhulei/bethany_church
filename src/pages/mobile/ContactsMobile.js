@@ -74,7 +74,7 @@ const ContactsMobile = () => {
         onSubmit={submit}
       >
         <Label for="input">Your email address:</Label>
-        <input type="email" id="input" name="email" />
+        <input type="email" id="input" name="text" />
         <Input
           id="textarea"
           type="text"
