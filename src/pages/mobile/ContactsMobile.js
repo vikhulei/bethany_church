@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import contact from "../../assets/contact.png";
 import * as FontAwesome from "react-icons/fa";
@@ -16,10 +15,6 @@ const Form = styled.form`
   margin: 0 30px;
   font-size: 0.8rem;
   color: blue;
-`;
-
-const Label = styled.label`
-  /* font-size: 0.8rem; */
 `;
 
 const Input = styled.input`
