@@ -13,17 +13,14 @@ const Picture = styled.img`
   object-fit: cover;
 `;
 
-const TitleWrapper = styled.div`
+const Title = styled.h1`
   margin-top: 20px;
   margin-left: 20px;
-`;
-
-const Title = styled.h1`
   font-size: calc(2rem + 2vw);
 `;
 
 const TextWrapper = styled.div`
-  margin-top: 50px;
+  margin: 100px 20px 50px 20px;
   width: 100vw;
   text-align: center;
 `;
@@ -40,15 +37,13 @@ const ServicesMobile = () => {
       <PictureWrapper>
         <Picture src={calendar} alt="calendar" />
       </PictureWrapper>
-      <TitleWrapper>
-        <Title>
-          Schedule
-          <br />
-          For
-          <br />
-          December
-        </Title>
-      </TitleWrapper>
+      <Title>
+        Schedule
+        <br />
+        For
+        <br />
+        December
+      </Title>
       <TextWrapper>
         <Heading>Dec 10</Heading>
         <MainText>Is God always love? Reflection on Epistle of John</MainText>
