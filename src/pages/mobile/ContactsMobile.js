@@ -24,6 +24,7 @@ const Label = styled.label`
 const Input = styled.textarea`
   height: 30vh;
   padding: 5px;
+  margin-top: 5px;
   /* display: flex;
   align-items: top;
   justify-content: center; */
