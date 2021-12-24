@@ -80,5 +80,3 @@ const ContactsMobile = () => {
 };
 
 export default ContactsMobile;
-
-// {`Your contacts (email, tel): \n \nYour message: `}
