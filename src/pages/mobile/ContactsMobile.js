@@ -65,17 +65,12 @@ const Ancor = styled.a`
 const ContactsMobile = () => {
   const submit = (event) => {
     alert("You wrote: " + event.target[0].value);
-    event.target[0].value = "";
   };
 
   return (
     <>
       <Contacts src={contact} alt="contact_us" />
-      <Form
-        action="https://formsubmit.co/vikhulei@gmail.com"
-        method="POST"
-        onSubmit={submit}
-      >
+      <Form action="https://formsubmit.co/vikhulei@gmail.com" method="POST">
         <Label>Your email address:</Label>
         <Input type="email" name="email"></Input>
         <TextArea
