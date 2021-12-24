@@ -78,7 +78,7 @@ const ContactsMobile = () => {
         <Input
           id="textarea"
           type="text"
-          name="email"
+          name="text"
           placeholder="Type your message here"
         ></Input>
         <Button type="submit">Send</Button>
