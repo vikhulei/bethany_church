@@ -74,12 +74,7 @@ const ContactsMobile = () => {
       >
         <Label for="input">Your email address:</Label>
         <input type="email" id="input" />
-        <Input
-          id="textarea"
-          type="email"
-          name="email"
-          placeholder="Type your message here"
-        ></Input>
+        <Input id="textarea" placeholder="Type your message here"></Input>
         <Button type="submit">Send</Button>
       </Form>
       <Footer>
