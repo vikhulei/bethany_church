@@ -18,6 +18,7 @@ const Form = styled.form`
 
 const Label = styled.label`
   font-size: 0.8rem;
+  color: blue;
   /* text-align: left; */
 `;
 
