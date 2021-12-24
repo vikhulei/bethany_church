@@ -63,9 +63,11 @@ const Sidebar = ({ sideBar, showSideBar }) => {
   return (
     <div>
       <IconWrapper>
-        <HamWrapper>
-          <FontAwesome.FaBars onClick={showSideBar} />
-        </HamWrapper>
+        {sideBar ? null : (
+          <HamWrapper>
+            <FontAwesome.FaBars onClick={showSideBar} />
+          </HamWrapper>
+        )}
       </IconWrapper>
       <SideNav sideBar={sideBar} onClick={showSideBar}>
         <IconWrapper>
