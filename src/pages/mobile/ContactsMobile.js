@@ -72,14 +72,9 @@ const ContactsMobile = () => {
       <Footer>
         <p>+380637931590</p>
         <a href="mailto:vikhulei@gmail.com">vikhulei@gmail.com</a>
-        <IconsWrapper>
-          <Ancor href="https://www.facebook.com/bethany.nivki" target="_blank">
-            <FontAwesome.FaFacebook />
-          </Ancor>
-          <Ancor href="#">
-            <FontAwesome.FaInstagram />
-          </Ancor>
-        </IconsWrapper>
+        <Ancor href="https://www.facebook.com/bethany.nivki" target="_blank">
+          <FontAwesome.FaFacebook />
+        </Ancor>
       </Footer>
     </>
   );
