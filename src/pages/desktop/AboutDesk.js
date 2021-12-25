@@ -2,10 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import collage from "../../assets/collage.jpg";
 
+const Wrapper = styled.div`
+  display: flex;
+  overflow: scroll;
+`;
+
 const TextWrapper = styled.div`
-  width: 100%;
+  /* width: 100%;
   height: 100%;
-  margin: 0 20px;
+  margin: 0 20px; */
 `;
 
 const Heading = styled.h2`
@@ -18,9 +23,9 @@ const MainText = styled.p`
 `;
 
 const PhotoWrapper = styled.div`
-  width: 100%;
-  margin: 30px 20px;
-  justify-content: center;
+  /* width: 100%;
+  margin: 30px 20px; */
+  /* justify-content: center; */
 `;
 
 const Photo = styled.img`
@@ -29,9 +34,13 @@ const Photo = styled.img`
   object-fit: contain;
 `;
 
+const Test = styled.div`
+  position: relative;
+`;
+
 const AboutDesk = () => {
   return (
-    <>
+    <Wrapper>
       <TextWrapper>
         <Heading>Affiliation</Heading>
         <MainText>Ukrainian Evangelical Church</MainText>
@@ -65,7 +74,7 @@ const AboutDesk = () => {
       <PhotoWrapper>
         <Photo src={collage} alt="collage" />
       </PhotoWrapper>
-    </>
+    </Wrapper>
   );
 };
 
