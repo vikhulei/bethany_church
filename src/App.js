@@ -13,7 +13,9 @@ const Wrapper = styled.div`
   background-color: lightgray;
 `;
 
-const Pages = styled.div``;
+const Pages = styled.div`
+  width: 100vw;
+`;
 
 export default function App() {
   const [mobileVersion, setMobileVersion] = useState(true);
