@@ -35,30 +35,30 @@ const MainText = styled.div`
 
 const Welcome = styled.p`
   font-family: "Rosarivo";
-  font-size: calc(4rem + 3vw);
-  /* line-height: 1; */
+  font-size: calc(2rem + 10vh);
 `;
 
 const ComeAs = styled.p`
   font-family: "Rosarivo";
-  font-size: calc(2rem + 2vw);
+  font-size: calc(1rem + 7vh);
   font-style: italic;
-  margin-left: 100px;
+  margin: -20px 0 0 100px;
 `;
 
 const BottomText = styled.div`
   position: absolute;
-  bottom: 50px;
+  bottom: 5vh;
   width: 100%;
 `;
 
 const NoNeed = styled.p`
   font-family: "Rosarivo";
-  font-size: calc(1.5rem + 1vw);
+  font-size: calc(1rem + 2.5vh);
   color: white;
   margin-left: 100px;
   text-align: center;
-  text-shadow: black 0px 0px 50px;
+  text-shadow: 1px 1px 5px black, 1px 1px 5px black, 1px 1px 5px black,
+    1px 1px 5px black;
 `;
 
 const HomeDesk = () => {
