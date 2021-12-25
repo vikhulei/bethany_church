@@ -11,6 +11,8 @@ import Contacts from "./pages/Contacts";
 
 const Wrapper = styled.div`
   background-color: lightgray;
+  z-index: -99;
+  width: 100vw;
 `;
 
 const Pages = styled.div`
