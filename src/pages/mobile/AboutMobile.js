@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import collage from "../../../public/assets/collage.jpg";
+import collage from "../../assets/collage.jpg";
 
 const PageWrapper = styled.div`
   margin-top: 20px;
