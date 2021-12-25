@@ -4,7 +4,6 @@ import collage from "../../assets/collage.jpg";
 
 const Wrapper = styled.div`
   display: flex;
-  overflow: scroll;
 `;
 
 const TextWrapper = styled.div`
