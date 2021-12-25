@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import contact from "../../../assets/contact.png";
+import contact from "../../../public/assets/contact.png";
 import * as FontAwesome from "react-icons/fa";
 
 const Contacts = styled.img`
