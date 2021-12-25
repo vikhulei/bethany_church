@@ -10,9 +10,12 @@ import Services from "./pages/Services";
 import Contacts from "./pages/Contacts";
 
 const Wrapper = styled.div`
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
   background-color: lightgray;
   z-index: -99;
-  width: 100vw;
 `;
 
 const Pages = styled.div`

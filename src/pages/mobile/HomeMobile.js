@@ -37,7 +37,6 @@ const MainText = styled.div`
 const Welcome = styled.p`
   font-family: "Rosarivo";
   font-size: calc(2rem + 5vw);
-  color: lightblue;
 `;
 
 const ComeAs = styled.p`
