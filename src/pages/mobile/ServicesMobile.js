@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import calendar from "../../assets/calendar.png";
+import calendar from "../../../assets/calendar.png";
 
 const PictureWrapper = styled.div`
   position: absolute;

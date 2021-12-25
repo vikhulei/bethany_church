@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import collage from "../../assets/collage.jpg";
+import collage from "../../../assets/collage.jpg";
 
 const Wrapper = styled.div`
   display: flex;

@@ -1,6 +1,6 @@
 import React from "react";
-import church_main from "../../assets/church_main_mobile.jpg";
-import bethany from "../../assets/bethany.png";
+import church_main from "../../../assets/church_main_mobile.jpg";
+import bethany from "../../../assets/bethany.png";
 import styled from "styled-components";
 
 const MainPicture = styled.div`
