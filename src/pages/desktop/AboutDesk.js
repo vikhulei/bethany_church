@@ -4,28 +4,36 @@ import collage from "../../assets/collage.jpg";
 
 const Wrapper = styled.div`
   display: flex;
-  min-height: 100vh;
+  justify-content: space-evenly;
+  min-height: calc(100vh - 120px);
+  margin: 60px 30px;
 `;
 
 const TextWrapper = styled.div`
-  width: 100%;
-  height: 100%;
-  margin: 0 20px;
+  flex: 1;
+  margin-right: 50px;
+`;
+
+const TitleWrapper = styled.div`
+  text-align: center;
+`;
+
+const Title = styled.h1`
+  font-size: calc(2rem + 3vh);
 `;
 
 const Heading = styled.h2`
-  font-size: calc(1.2rem);
+  font-size: 1.5rem;
   margin: 10px 0 2px;
 `;
 
 const MainText = styled.p`
+  font-size: 1.2rem;
   margin-left: 30px;
 `;
 
 const PhotoWrapper = styled.div`
-  /* width: 100%;
-  margin: 30px 20px; */
-  /* justify-content: center; */
+  flex: 1;
 `;
 
 const Photo = styled.img`
@@ -34,14 +42,13 @@ const Photo = styled.img`
   object-fit: contain;
 `;
 
-const Test = styled.div`
-  position: relative;
-`;
-
 const AboutDesk = () => {
   return (
     <Wrapper>
       <TextWrapper>
+        <TitleWrapper>
+          <Title>About Us</Title>
+        </TitleWrapper>
         <Heading>Affiliation</Heading>
         <MainText>Ukrainian Evangelical Church</MainText>
         <Heading>Brief History</Heading>
