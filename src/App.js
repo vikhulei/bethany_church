@@ -10,18 +10,10 @@ import Services from "./pages/Services";
 import Contacts from "./pages/Contacts";
 
 const Wrapper = styled.div`
-  /* position: absolute;
-  width: 100vw;
-  height: 100%;
-  display: flex; */
   background-color: lightgray;
-  /* z-index: -99; */
 `;
 
-const Pages = styled.div`
-  /* position: absolute; */
-  /* max-width: 100vw; */
-`;
+const Pages = styled.div``;
 
 export default function App() {
   const [mobileVersion, setMobileVersion] = useState(true);

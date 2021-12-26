@@ -4,11 +4,6 @@ import { Link } from "react-router-dom";
 import * as FontAwesome from "react-icons/fa";
 import * as Grommet from "react-icons/gr";
 
-const Wrapper = styled.div`
-  /* position: absolute;
-  z-index: 99; */
-`;
-
 const IconWrapper = styled.div`
   position: absolute;
   top: 10px;
@@ -20,11 +15,11 @@ const IconWrapper = styled.div`
   }
 `;
 
-const HamWrapper = styled.div`
-  position: fixed;
-  top: 10px;
-  right: 20px;
-`;
+// const HamWrapper = styled.div`
+//   position: fixed;
+//   top: 10px;
+//   right: 20px;
+// `;
 
 const SideNav = styled.div`
   position: fixed;
@@ -66,14 +61,12 @@ const SideNavLink = styled(Link)`
 
 const Sidebar = ({ sideBar, showSideBar }) => {
   return (
-    <Wrapper>
-      <IconWrapper>
-        {sideBar ? null : (
-          <HamWrapper>
-            <FontAwesome.FaBars onClick={showSideBar} />
-          </HamWrapper>
-        )}
-      </IconWrapper>
+    <>
+      {sideBar ? null : (
+        <IconWrapper>
+          <FontAwesome.FaBars onClick={showSideBar} />
+        </IconWrapper>
+      )}
       <SideNav sideBar={sideBar} onClick={showSideBar}>
         <IconWrapper>
           <Grommet.GrClose onClick={showSideBar} />
@@ -83,7 +76,7 @@ const Sidebar = ({ sideBar, showSideBar }) => {
         <SideNavLink to="/pages/services">Services</SideNavLink>
         <SideNavLink to="/pages/contacts">Contacts</SideNavLink>
       </SideNav>
-    </Wrapper>
+    </>
   );
 };
 
