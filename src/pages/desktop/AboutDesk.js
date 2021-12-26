@@ -8,9 +8,9 @@ const Wrapper = styled.div`
 `;
 
 const TextWrapper = styled.div`
-  /* width: 100%;
+  width: 100%;
   height: 100%;
-  margin: 0 20px; */
+  margin: 0 20px;
 `;
 
 const Heading = styled.h2`
