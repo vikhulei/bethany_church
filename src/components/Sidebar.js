@@ -5,7 +5,8 @@ import * as FontAwesome from "react-icons/fa";
 import * as Grommet from "react-icons/gr";
 
 const Wrapper = styled.div`
-  /* position: relative; */
+  /* position: absolute;
+  z-index: 99; */
 `;
 
 const IconWrapper = styled.div`
@@ -26,7 +27,7 @@ const HamWrapper = styled.div`
 `;
 
 const SideNav = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
   right: ${({ sideBar }) => (sideBar ? "0" : "-60vw")};
   transition: 350ms;
