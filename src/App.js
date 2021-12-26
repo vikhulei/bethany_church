@@ -13,9 +13,9 @@ const Wrapper = styled.div`
   /* position: absolute;
   width: 100vw;
   height: 100%;
-  display: flex;
+  display: flex; */
   background-color: lightgray;
-  z-index: -99; */
+  /* z-index: -99; */
 `;
 
 const Pages = styled.div`
