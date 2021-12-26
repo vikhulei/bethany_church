@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 import * as FontAwesome from "react-icons/fa";
 import * as Grommet from "react-icons/gr";
 
+const Wrapper = styled.div`
+  /* position: relative; */
+`;
+
 const IconWrapper = styled.div`
   position: absolute;
   top: 10px;
@@ -61,7 +65,7 @@ const SideNavLink = styled(Link)`
 
 const Sidebar = ({ sideBar, showSideBar }) => {
   return (
-    <div>
+    <Wrapper>
       <IconWrapper>
         {sideBar ? null : (
           <HamWrapper>
@@ -78,7 +82,7 @@ const Sidebar = ({ sideBar, showSideBar }) => {
         <SideNavLink to="/pages/services">Services</SideNavLink>
         <SideNavLink to="/pages/contacts">Contacts</SideNavLink>
       </SideNav>
-    </div>
+    </Wrapper>
   );
 };
 
