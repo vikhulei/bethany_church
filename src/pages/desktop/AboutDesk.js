@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
   min-height: calc(100vh - 120px);
-  margin: 60px 30px;
+  margin: 80px 30px;
 `;
 
 const TextWrapper = styled.div`
@@ -16,6 +16,7 @@ const TextWrapper = styled.div`
 
 const TitleWrapper = styled.div`
   text-align: center;
+  margin-bottom: 30px;
 `;
 
 const Title = styled.h1`
@@ -24,7 +25,7 @@ const Title = styled.h1`
 
 const Heading = styled.h2`
   font-size: 1.5rem;
-  margin: 10px 0 2px;
+  margin: 30px 0 5px;
 `;
 
 const MainText = styled.p`

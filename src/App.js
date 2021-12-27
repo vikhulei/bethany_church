@@ -11,6 +11,7 @@ import Contacts from "./pages/Contacts";
 
 const Wrapper = styled.div`
   background-color: lightgray;
+  overflow-y: scroll;
 `;
 
 const Pages = styled.div``;
