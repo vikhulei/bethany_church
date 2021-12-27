@@ -2,6 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import contact from "../../assets/contact.png";
 import * as FontAwesome from "react-icons/fa";
+import BgroundContact from "../../components/BgroundContact";
+
+const Wrapper = styled.div`
+  position: relative;
+  /* min-width: 500px;
+  width: 50vw;
+  margin: 80px auto 0 auto; */
+  z-index: 1;
+`;
 
 const Contacts = styled.img`
   display: block;
@@ -44,37 +53,41 @@ const Footer = styled.footer`
   align-items: center;
 `;
 
-const Ancor = styled.a`
+const Anchor = styled.a`
   font-size: 1.5rem;
 `;
 
 const ContactsMobile = () => {
   return (
     <>
-      <Contacts src={contact} alt="contact_us" />
-      <Form action="https://formsubmit.co/vikhulei@gmail.com" method="POST">
-        <Input
-          id="email"
-          type="email"
-          name="email"
-          placeholder="Type your email address here"
-        ></Input>
-        <TextArea
-          id="textarea"
-          type="text"
-          name="text"
-          placeholder="Type your message here"
-        ></TextArea>
-        <input type="hidden" name="_captcha" value="false" />
-        <Button type="submit">Send</Button>
-      </Form>
-      <Footer>
-        <p>+380637931590</p>
-        <a href="mailto:vikhulei@gmail.com">vikhulei@gmail.com</a>
-        <Ancor href="https://www.facebook.com/bethany.nivki" target="_blank">
-          <FontAwesome.FaFacebook />
-        </Ancor>
-      </Footer>
+      {/* <BgroundContact> */}
+      <Wrapper>
+        <Contacts src={contact} alt="contact_us" />
+        <Form action="https://formsubmit.co/vikhulei@gmail.com" method="POST">
+          <Input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Type your email address here"
+          ></Input>
+          <TextArea
+            id="textarea"
+            type="text"
+            name="text"
+            placeholder="Type your message here"
+          ></TextArea>
+          <input type="hidden" name="_captcha" value="false" />
+          <Button type="submit">Send</Button>
+        </Form>
+        <Footer>
+          <p>+380637931590</p>
+          <a href="mailto:vikhulei@gmail.com">vikhulei@gmail.com</a>
+          <Anchor href="https://www.facebook.com/bethany.nivki" target="_blank">
+            <FontAwesome.FaFacebook />
+          </Anchor>
+        </Footer>
+      </Wrapper>
+      {/* </BgroundContact> */}
     </>
   );
 };
