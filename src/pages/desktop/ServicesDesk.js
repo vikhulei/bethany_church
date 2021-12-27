@@ -15,7 +15,9 @@ const PictureWrapper = styled.div`
 `;
 
 const Picture = styled.img`
+  width: 100%;
   object-fit: contain;
+  max-height: 100vh;
 `;
 
 const Title = styled.h1`
