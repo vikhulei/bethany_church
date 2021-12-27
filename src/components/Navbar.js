@@ -9,6 +9,7 @@ const TopNav = styled.div`
   display: flex;
   justify-content: space-between;
   width: 50vw;
+  z-index: 99;
 `;
 
 const TopNavLink = styled(Link)`
