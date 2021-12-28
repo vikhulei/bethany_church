@@ -6,9 +6,9 @@ import BgroundContact from "../../components/BgroundContact";
 
 const Wrapper = styled.div`
   position: relative;
-  /* min-width: 500px;
+  min-width: 500px;
   width: 50vw;
-  margin: 80px auto 0 auto; */
+  margin: 80px auto 0 auto;
   z-index: 1;
 `;
 
