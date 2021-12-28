@@ -22,6 +22,7 @@ const Pages = styled.div``;
 export default function App() {
   const [mobileVersion, setMobileVersion] = useState(true);
   const [sideBar, setSideBar] = useState(false);
+  const [eng, setEng] = useState(false);
 
   const showSideBar = () => {
     setSideBar(!sideBar);
@@ -29,6 +30,10 @@ export default function App() {
 
   const hideSideBar = () => {
     setSideBar(false);
+  };
+
+  const setEnglish = () => {
+    setEng(!eng);
   };
 
   useEffect(() => {
@@ -46,7 +51,7 @@ export default function App() {
 
   return (
     <Wrapper className="App">
-      <Lang />
+      <Lang setEnglish={setEnglish} />
       <Router>
         {mobileVersion ? (
           <Sidebar sideBar={sideBar} showSideBar={showSideBar} />
@@ -58,11 +63,11 @@ export default function App() {
             <Route
               exact
               path="/"
-              element={<Home mobileVersion={mobileVersion} />}
+              element={<Home mobileVersion={mobileVersion} eng={eng} />}
             />
             <Route
               path="/pages/home"
-              element={<Home mobileVersion={mobileVersion} />}
+              element={<Home mobileVersion={mobileVersion} eng={eng} />}
             />
             <Route
               path="/pages/about"

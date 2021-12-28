@@ -18,11 +18,14 @@ const SelectLang = styled.div`
   &:hover {
     cursor: pointer;
   }
+  &:active {
+    transform: translate(2px, 2px);
+  }
   z-index: 99;
 `;
 
-const Lang = () => {
-  return <SelectLang>укр/eng</SelectLang>;
+const Lang = ({ setEnglish }) => {
+  return <SelectLang onClick={setEnglish}>укр/eng</SelectLang>;
 };
 
 export default Lang;

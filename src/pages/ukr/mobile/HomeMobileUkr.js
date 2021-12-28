@@ -12,7 +12,7 @@ import {
   NoNeed
 } from "../../../styled/mobile/HomeMobileStyled";
 
-const HomeMobileEng = () => {
+const HomeMobileUkr = () => {
   return (
     <>
       <MainPicture>
@@ -20,16 +20,16 @@ const HomeMobileEng = () => {
       </MainPicture>
       <Logo src={bethany} />
       <MainText>
-        <Welcome>Welcome</Welcome>
-        <ComeAs>come as you are</ComeAs>
+        <Welcome>Завітайте до нас</Welcome>
+        <ComeAs>ми завжди вам раді</ComeAs>
       </MainText>
       <BottomText>
         <NoNeed>
-          No need to get clever. Simply <br /> tell Him what you are up to
+          Не потрібно бути ідеальним. Скажіть <br /> йому те, що на думці
         </NoNeed>
       </BottomText>
     </>
   );
 };
 
-export default HomeMobileEng;
+export default HomeMobileUkr;
