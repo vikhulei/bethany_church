@@ -52,7 +52,7 @@ const TextArea = styled.textarea`
 `;
 
 const Button = styled.button`
-  width: 130px;
+  width: 180px;
   height: 40px;
   margin: 10px auto 0 auto;
   border-radius: 10px;
