@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   position: relative;
   min-width: 500px;
   width: 50vw;
-  margin: 80px auto 0 auto;
+  margin: 60px auto 0 auto;
   z-index: 1;
 `;
 
@@ -37,20 +37,37 @@ const Form = styled.form`
 `;
 
 const Input = styled.input`
-  font-size: 0.8rem;
+  font-size: 1rem;
+  height: 30px;
+  background-color: lightgrey;
+  border: none;
+  border-radius: 3px;
+  padding-left: 5px;
+  &:focus {
+    outline: none;
+  }
 `;
 
 const TextArea = styled.textarea`
   height: 30vh;
   padding: 5px;
-  margin-top: 5px;
-  font-size: 0.8rem;
+  margin: 20px 0;
+  font-size: 1rem;
+  background-color: lightgrey;
+  border-radius: 10px;
+  border: none;
+  &:focus {
+    outline: none;
+  }
 `;
+
 const Button = styled.button`
   width: 130px;
-  height: 30px;
+  height: 40px;
   margin: 10px auto 0 auto;
   border-radius: 10px;
+  background-color: lightgrey;
+  font-size: 1rem;
 `;
 
 const Footer = styled.footer`

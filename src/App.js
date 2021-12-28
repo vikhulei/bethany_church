@@ -10,8 +10,9 @@ import Services from "./pages/Services";
 import Contacts from "./pages/Contacts";
 
 const Wrapper = styled.div`
-  background-color: lightgrey;
   background-color: rgb(231, 214, 208);
+  background-color: rgb(218, 170, 153);
+  background-color: lightgrey;
   overflow-y: scroll;
 `;
 
