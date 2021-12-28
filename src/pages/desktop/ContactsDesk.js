@@ -4,16 +4,6 @@ import contact from "../../assets/contact.png";
 import * as FontAwesome from "react-icons/fa";
 import BgroundContact from "../../components/BgroundContact";
 
-// const Bground = {Bground}
-
-// const Bground = styled.div`
-//   background-color: lightcoral;
-//   position: absolute;
-//   width: 100vw;
-//   /* height: 100%; */
-//   z-index: -99;
-// `;
-
 const Wrapper = styled.div`
   position: relative;
   min-width: 500px;
@@ -72,16 +62,17 @@ const Button = styled.button`
 
 const Footer = styled.footer`
   width: 100%;
-  height: 100px;
+  height: 130px;
   margin: 50px auto 30px auto;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  font-size: 1.2rem;
 `;
 
 const Anchor = styled.a`
-  font-size: 1.5rem;
+  font-size: 2rem;
+  display: flex;
 `;
 
 const ContactsMobile = () => {
@@ -109,10 +100,10 @@ const ContactsMobile = () => {
         </Form>
         <Footer>
           <p>+380637931590</p>
-          <a href="mailto:vikhulei@gmail.com">vikhulei@gmail.com</a>
           <Anchor href="https://www.facebook.com/bethany.nivki" target="_blank">
             <FontAwesome.FaFacebook />
           </Anchor>
+          <a href="mailto:vikhulei@gmail.com">vikhulei@gmail.com</a>
         </Footer>
       </Wrapper>
     </>

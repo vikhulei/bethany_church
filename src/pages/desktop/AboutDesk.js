@@ -29,7 +29,7 @@ const Heading = styled.h2`
 `;
 
 const MainText = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-left: 30px;
 `;
 
