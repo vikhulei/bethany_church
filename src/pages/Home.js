@@ -1,5 +1,5 @@
 import React from "react";
-import HomeMobile from "./mobile/HomeMobile";
+import HomeMobile from "../pages/eng/mobile/HomeMobileEng";
 import HomeDesk from "./desktop/HomeDesk";
 
 const Home = ({ mobileVersion }) => {

@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Contacts from "./pages/Contacts";
+import Lang from "./pages/Language";
 
 const Wrapper = styled.div`
   background-color: rgb(231, 214, 208);
@@ -45,6 +46,7 @@ export default function App() {
 
   return (
     <Wrapper className="App">
+      <Lang />
       <Router>
         {mobileVersion ? (
           <Sidebar sideBar={sideBar} showSideBar={showSideBar} />
