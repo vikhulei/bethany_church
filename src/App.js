@@ -75,15 +75,15 @@ export default function App() {
             />
             <Route
               path="/pages/about"
-              element={<About mobileVersion={mobileVersion} />}
+              element={<About mobileVersion={mobileVersion} eng={eng} />}
             />
             <Route
               path="/pages/services"
-              element={<Services mobileVersion={mobileVersion} />}
+              element={<Services mobileVersion={mobileVersion} eng={eng} />}
             />
             <Route
               path="/pages/contacts"
-              element={<Contacts mobileVersion={mobileVersion} />}
+              element={<Contacts mobileVersion={mobileVersion} eng={eng} />}
             />
           </Routes>
         </Pages>

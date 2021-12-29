@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const SelectLang = styled.div`
-  position: fixed;
+  position: absolute;
   right: 10px;
   top: 60px;
   /* box-shadow: 10px 10px 30px black; */
