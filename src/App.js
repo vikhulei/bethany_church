@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./styles.css";
 import styled from "styled-components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
+import NavbarEng from "./components/eng/NavbarEng";
+import SidebarEng from "./components/eng/SidebarEng";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -55,9 +55,9 @@ export default function App() {
       <Lang setEnglish={setEnglish} />
       <Router>
         {mobileVersion ? (
-          <Sidebar sideBar={sideBar} showSideBar={showSideBar} />
+          <SidebarEng sideBar={sideBar} showSideBar={showSideBar} />
         ) : (
-          <Navbar mobileVersion={mobileVersion} />
+          <NavbarEng mobileVersion={mobileVersion} />
         )}
         <Pages onClick={hideSideBar}>
           <Routes>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import "./bgroundContact.css";
+import "./BgroundContact.css";
 
 const Bground = styled.div`
   position: fixed;
