@@ -3,31 +3,31 @@ import calendar from "../../assets/calendar.png";
 import {Wrapper, PictureWrapper, Picture, Title, TextWrapper, Heading, MainText} from "../../../styled/mobile/ServicesMobileStyled"
 
 
-const ServicesMobileEng = () => {
+const ServicesMobileUkr = () => {
   return (
     <Wrapper>
       <PictureWrapper>
         <Picture src={calendar} alt="calendar" />
       </PictureWrapper>
       <Title>
-        Schedule
+        Розклад
         <br />
-        For
+        Служінь в
         <br />
-        December
+        Січні 2022
       </Title>
       <TextWrapper>
-        <Heading>Dec 10</Heading>
-        <MainText>Is God always love? Reflection on Epistle of John</MainText>
-        <Heading>Dec 17</Heading>
-        <MainText>Sufferings for the faith today - First Peter</MainText>
-        <Heading>Dec 24</Heading>
-        <MainText>Thoughts about modern church from Second Peter</MainText>
-        <Heading>Dec 31</Heading>
-        <MainText>Epistle of Judah on heresies </MainText>
+        <Heading>8 січня</Heading>
+        <MainText>Чи завжди Бог любов? Роздуми над Першим Посланням Івана</MainText>
+        <Heading>15 січня</Heading>
+        <MainText>Страждання за віру сьогодні - Перше Петра</MainText>
+        <Heading>22 січня</Heading>
+        <MainText>Думки про сучасну Церква з Другого Послання Петра</MainText>
+        <Heading>29 січня</Heading>
+        <MainText>Апостол Юда про єресі </MainText>
       </TextWrapper>
     </Wrapper>
   );
 };
 
-export default ServicesMobileEng;
+export default ServicesMobileUkr;
