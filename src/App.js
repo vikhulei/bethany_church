@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavbarEng from "./components/eng/NavbarEng";
 import SidebarEng from "./components/eng/SidebarEng";
+import NavbarUkr from "./components/ukr/NavbarUkr";
+import SidebarUkr from "./components/ukr/SidebarUkr";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -54,10 +56,11 @@ export default function App() {
     <Wrapper className="App">
       <Lang setEnglish={setEnglish} />
       <Router>
-        {mobileVersion ? (
+        {mobileVersion ? ( eng ?
           <SidebarEng sideBar={sideBar} showSideBar={showSideBar} />
-        ) : (
+        : <SidebarUkr sideBar={sideBar} showSideBar={showSideBar} />) : ( eng ? 
           <NavbarEng mobileVersion={mobileVersion} />
+          : <NavbarUkr mobileVersion={mobileVersion} />
         )}
         <Pages onClick={hideSideBar}>
           <Routes>
