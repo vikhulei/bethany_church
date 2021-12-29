@@ -1,5 +1,5 @@
 import React from "react";
-import calendar from "../../assets/calendar.png";
+import calendar from "../../../assets/calendar.png";
 import {Wrapper, PictureWrapper, Picture, Title, TextWrapper, Heading, MainText} from "../../../styled/mobile/ServicesMobileStyled"
 
 

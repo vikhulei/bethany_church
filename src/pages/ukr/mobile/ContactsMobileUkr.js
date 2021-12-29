@@ -1,5 +1,5 @@
 import React from "react";
-import contact from "../../assets/contact.png";
+import contact from "../../../assets/contact.png";
 import * as FontAwesome from "react-icons/fa";
 import {Wrapper, Contacts, Form, Input, TextArea, Button, Footer, Anchor} from "../../../styled/mobile/ContactsMobileStyled"
 

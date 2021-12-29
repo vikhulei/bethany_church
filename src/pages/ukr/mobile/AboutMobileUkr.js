@@ -1,5 +1,5 @@
 import React from "react";
-import collage from "../../assets/collage.jpg";
+import collage from "../../../assets/collage.jpg";
 import {Wrapper, TitleWrapper, Title, TextWrapper, Heading, MainText, PictureWrapper, Picture} from "../../../styled/mobile/AboutMobileStyled"
 
 
