@@ -20,12 +20,12 @@ const HomeMobileUkr = () => {
       </MainPicture>
       <Logo src={bethany} />
       <MainText>
-        <Welcome>Завітайте до нас</Welcome>
-        <ComeAs>ми завжди вам раді</ComeAs>
+        <Welcome>Завітайте</Welcome>
+        <ComeAs>завжди вам раді</ComeAs>
       </MainText>
       <BottomText>
         <NoNeed>
-          Не потрібно бути ідеальним. Скажіть <br /> йому те, що на думці
+          Не потрібно бути ідеальним. Скажіть <br /> Йому те, що у Вас на серці
         </NoNeed>
       </BottomText>
     </>
