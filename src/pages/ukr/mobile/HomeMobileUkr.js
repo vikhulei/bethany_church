@@ -21,11 +21,11 @@ const HomeMobileUkr = () => {
       <Logo src={bethany} />
       <MainText>
         <Welcome>Завітайте</Welcome>
-        <ComeAs>завжди вам раді</ComeAs>
+        <ComeAs>вам тут раді</ComeAs>
       </MainText>
       <BottomText>
         <NoNeed>
-          Не потрібно бути ідеальним. Скажіть <br /> Йому те, що у Вас на серці
+          Не потрібно бути ідеальним. <br /> Скажіть Йому те, що у Вас на серці
         </NoNeed>
       </BottomText>
     </>
