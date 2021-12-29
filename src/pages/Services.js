@@ -1,9 +1,25 @@
 import React from "react";
+import ServicesMobileEng from "../pages/eng/mobile/ServicesMobileEng";
+import ServicesMobileUkr from "../pages/ukr/mobile/ServicesMobileUkr";
 import ServicesDesk from "./desktop/ServicesDesk";
-import ServicesMobile from "./mobile/ServicesMobile";
 
-const Services = ({ mobileVersion }) => {
-  return <div>{mobileVersion ? <ServicesMobile /> : <ServicesDesk />}</div>;
+const Services = ({ eng, mobileVersion }) => {
+  
+  return (
+    <>
+      {eng ? (
+        mobileVersion ? (
+          <ServicesMobileEng />
+        ) : (
+          <ServicesDesk />
+        )
+      ) : mobileVersion ? (
+        <ServicesMobileUkr />
+      ) : (
+        <ServicesDesk />
+      )}
+    </>
+  );
 };
 
 export default Services;

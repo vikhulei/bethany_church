@@ -10,7 +10,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Contacts from "./pages/Contacts";
-import Lang from "./pages/Language";
+import Lang from "./components/Language";
 
 const Wrapper = styled.div`
   background-color: rgb(231, 214, 208);
