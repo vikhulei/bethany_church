@@ -15,6 +15,7 @@ const Wrapper = styled.div`
   background-color: rgb(218, 170, 153);
   background-color: lightgrey;
   overflow-y: scroll;
+  // min-height: 100vh;
 `;
 
 const Pages = styled.div``;

@@ -2,6 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import calendar from "../../assets/calendar.png";
 
+const Wrapper = styled.div `
+  min-height: 100vh;
+`
+
 const PictureWrapper = styled.div`
   position: absolute;
   text-align: center;
@@ -32,7 +36,7 @@ const MainText = styled.p`
 
 const ServicesMobile = () => {
   return (
-    <>
+    <Wrapper>
       <PictureWrapper>
         <Picture src={calendar} alt="calendar" />
       </PictureWrapper>
@@ -53,7 +57,7 @@ const ServicesMobile = () => {
         <Heading>Dec 31</Heading>
         <MainText>Epistle of Judah on heresies </MainText>
       </TextWrapper>
-    </>
+    </Wrapper>
   );
 };
 
