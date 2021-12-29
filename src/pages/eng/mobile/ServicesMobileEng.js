@@ -14,16 +14,16 @@ const ServicesMobileEng = () => {
         <br />
         For
         <br />
-        December
+        January-22
       </Title>
       <TextWrapper>
-        <Heading>Dec 10</Heading>
+        <Heading>Jan 8</Heading>
         <MainText>Is God always love? Reflection on Epistle of John</MainText>
-        <Heading>Dec 17</Heading>
+        <Heading>Jan 15</Heading>
         <MainText>Sufferings for the faith today - First Peter</MainText>
-        <Heading>Dec 24</Heading>
+        <Heading>Jan 22</Heading>
         <MainText>Thoughts about modern church from Second Peter</MainText>
-        <Heading>Dec 31</Heading>
+        <Heading>Jan 29</Heading>
         <MainText>Epistle of Judah on heresies </MainText>
       </TextWrapper>
     </Wrapper>
