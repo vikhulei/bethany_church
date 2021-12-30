@@ -9,11 +9,6 @@ const Wrapper = styled.div`
   margin: 80px 30px;
 `;
 
-const TextWrapper = styled.div`
-  flex: 1;
-  margin-right: 50px;
-`;
-
 const TitleWrapper = styled.div`
   text-align: center;
   margin-bottom: 30px;
@@ -22,6 +17,12 @@ const TitleWrapper = styled.div`
 const Title = styled.h1`
   font-size: calc(2rem + 3vh);
 `;
+
+const TextWrapper = styled.div`
+  flex: 1;
+  margin-right: 50px;
+`;
+
 
 const Heading = styled.h2`
   font-size: 1.5rem;

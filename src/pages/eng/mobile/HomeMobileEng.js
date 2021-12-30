@@ -13,6 +13,7 @@ import {
 } from "../../../styled/pages/HomeStyled";
 
 const HomeMobileEng = () => {
+
   return (
     <>
       <MainPicture>

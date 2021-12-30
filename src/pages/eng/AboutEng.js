@@ -1,5 +1,5 @@
 import React from "react";
-import collage from "../../../assets/collage.jpg";
+import collage from "../../assets/collage.jpg";
 import {
   Wrapper,
   TitleWrapper,
@@ -9,15 +9,15 @@ import {
   MainText,
   PictureWrapper,
   Picture
-} from "../../../styled/pages/AboutStyled";
+} from "../../styled/pages/AboutStyled";
 
 const AboutMobileEng = () => {
   return (
     <Wrapper>
+      <TextWrapper>
       <TitleWrapper>
         <Title>About Us</Title>
       </TitleWrapper>
-      <TextWrapper>
         <Heading>Affiliation</Heading>
         <MainText>Ukrainian Evangelical Church</MainText>
         <Heading>Brief History</Heading>

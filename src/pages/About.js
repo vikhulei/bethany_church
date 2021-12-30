@@ -1,23 +1,14 @@
 import React from "react";
-import AboutMobileEng from "../pages/eng/mobile/AboutMobileEng";
-import AboutMobileUkr from "../pages/ukr/mobile/AboutMobileUkr";
-import AboutDesk from "./desktop/AboutDesk";
+import AboutEng from "./eng/AboutEng";
+import AboutUkr from "./ukr/AboutUkr";
 
 const About = ({ eng, mobileVersion }) => {
   
   return (
     <>
-      {eng ? (
-        mobileVersion ? (
-          <AboutMobileEng />
-        ) : (
-          <AboutDesk />
-        )
-      ) : mobileVersion ? (
-        <AboutMobileUkr />
-      ) : (
-        <AboutDesk />
-      )}
+      {eng ? <AboutEng />
+      : <AboutUkr />
+      }
     </>
   );
 };
