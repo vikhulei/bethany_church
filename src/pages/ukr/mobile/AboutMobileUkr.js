@@ -1,7 +1,15 @@
 import React from "react";
 import collage from "../../../assets/collage.jpg";
-import {Wrapper, TitleWrapper, Title, TextWrapper, Heading, MainText, PictureWrapper, Picture} from "../../../styled/mobile/AboutMobileStyled"
-
+import {
+  Wrapper,
+  TitleWrapper,
+  Title,
+  TextWrapper,
+  Heading,
+  MainText,
+  PictureWrapper,
+  Picture
+} from "../../../styled/mobile/AboutMobileStyled";
 
 const AboutMobileUkr = () => {
   return (
@@ -16,12 +24,12 @@ const AboutMobileUkr = () => {
         <MainText>
           1994 - заснована викладачами і студентами Семінарії
           <br />
-          1996 - переїзд в кінотеатр "Нивки"
+          1996 - служіння в кінотеатрі "Нивки"
           <br />
-          2000 - переїзд в Експоплазу
+          2000 - служіння в виставковому центрі "Експоплаза"
           <br />
-          2005 - переїзд в учбовий центр "Славутич" <br />
-          2018 - переїзд в готель "Флорида"
+          2005 - служіння в учбовому центрі "Славутич" <br />
+          2018 - служіння в готелі "Флорида"
         </MainText>
         <Heading>Ми віримо</Heading>
         <MainText>
@@ -35,7 +43,8 @@ const AboutMobileUkr = () => {
         </MainText>
         <Heading>Віфанія сьогодні</Heading>
         <MainText>
-          Невелика громада християн, згуртована для молитви, вивчення Біблії та відкрита для допомоги тим, хто її потребує
+          Невелика громада християн, згуртована для молитви, вивчення Біблії та
+          відкрита для допомоги тим, хто її потребує
         </MainText>
       </TextWrapper>
       <PictureWrapper>
