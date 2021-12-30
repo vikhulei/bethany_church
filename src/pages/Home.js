@@ -4,7 +4,6 @@ import HomeMobileUkr from "../pages/ukr/mobile/HomeMobileUkr";
 import HomeDesk from "./desktop/HomeDesk";
 
 const Home = ({ eng, mobileVersion }) => {
-  
   return (
     <>
       {eng ? (
