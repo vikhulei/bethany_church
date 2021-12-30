@@ -32,12 +32,10 @@ const MainText = styled.div`
 `;
 
 const Welcome = styled.p`
-  font-family: "Rosarivo";
   font-size: calc(2rem + 5vw);
 `;
 
 const ComeAs = styled.p`
-  font-family: "Rosarivo";
   font-size: calc(1rem + 5vw);
   font-style: italic;
 `;
@@ -50,7 +48,6 @@ const BottomText = styled.div`
 `;
 
 const NoNeed = styled.p`
-  font-family: "Rosarivo";
   font-size: calc(1rem + 1.2vw);
   text-align: center;
   text-shadow: 1px 1px 5px black, 1px 1px 5px black, 1px 1px 5px black,
