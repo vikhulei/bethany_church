@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const TopNav = styled.div`
   position: absolute;
@@ -13,9 +13,11 @@ const TopNav = styled.div`
 
 const TopNavLink = styled(Link)`
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 2.3vw;
   color: black;
+  @media screen and (min-width: 900px) {
+    font-size: 1.3rem;
+  }
 `;
 
-
-export {TopNav, TopNavLink};
+export { TopNav, TopNavLink };
