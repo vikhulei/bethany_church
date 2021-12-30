@@ -69,7 +69,7 @@ const HomeDesk = () => {
       </MainPicture>
       <Logo src={bethany} />
       <MainText>
-        <Welcome>Welcome</Welcome>
+        <Welcome>Завітайте</Welcome>
         <ComeAs>come as you are</ComeAs>
       </MainText>
       <BottomText>
