@@ -5,13 +5,14 @@ const SelectLang = styled.div`
   position: absolute;
   right: 10px;
   top: 60px;
-  /* box-shadow: 10px 10px 30px black; */
-  /* font-family: Arial, Helvetica, sans-serif; */
+  @media screen and (min-width: 600px) {
+    right: 30px;
+    top: 45px;
+  }
   font-weight: 600;
   font-size: 0.9rem;
   color: black;
   text-align: center;
-  /* border: solid 1px gray; */
   padding: 3px;
   background-color: rgb(180, 180, 180);
   width: 65px;
