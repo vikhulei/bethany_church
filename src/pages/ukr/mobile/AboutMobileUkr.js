@@ -9,7 +9,7 @@ import {
   MainText,
   PictureWrapper,
   Picture
-} from "../../../styled/mobile/AboutMobileStyled";
+} from "../../../styled/pages/AboutStyled";
 
 const AboutMobileUkr = () => {
   return (

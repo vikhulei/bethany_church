@@ -1,7 +1,14 @@
 import React from "react";
 import calendar from "../../../assets/calendar.png";
-import {Wrapper, PictureWrapper, Picture, Title, TextWrapper, Heading, MainText} from "../../../styled/mobile/ServicesMobileStyled"
-
+import {
+  Wrapper,
+  PictureWrapper,
+  Picture,
+  Title,
+  TextWrapper,
+  Heading,
+  MainText
+} from "../../../styled/pages/ServicesStyled";
 
 const ServicesMobileUkr = () => {
   return (
@@ -18,7 +25,9 @@ const ServicesMobileUkr = () => {
       </Title>
       <TextWrapper>
         <Heading>8 січня</Heading>
-        <MainText>Чи завжди Бог любов? Роздуми над Першим Посланням Івана</MainText>
+        <MainText>
+          Чи завжди Бог любов? Роздуми над Першим Посланням Івана
+        </MainText>
         <Heading>15 січня</Heading>
         <MainText>Страждання за віру сьогодні - Перше Петра</MainText>
         <Heading>22 січня</Heading>

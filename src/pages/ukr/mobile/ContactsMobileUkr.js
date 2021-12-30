@@ -1,8 +1,16 @@
 import React from "react";
 import contact from "../../../assets/contact.png";
 import * as FontAwesome from "react-icons/fa";
-import {Wrapper, Contacts, Form, Input, TextArea, Button, Footer, Anchor} from "../../../styled/mobile/ContactsMobileStyled"
-
+import {
+  Wrapper,
+  Contacts,
+  Form,
+  Input,
+  TextArea,
+  Button,
+  Footer,
+  Anchor
+} from "../../../styled/pages/ContactsStyled";
 
 const ContactsMobileUkr = () => {
   return (

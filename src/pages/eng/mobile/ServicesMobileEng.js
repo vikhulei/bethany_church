@@ -1,7 +1,14 @@
 import React from "react";
 import calendar from "../../../assets/calendar.png";
-import {Wrapper, PictureWrapper, Picture, Title, TextWrapper, Heading, MainText} from "../../../styled/mobile/ServicesMobileStyled"
-
+import {
+  Wrapper,
+  PictureWrapper,
+  Picture,
+  Title,
+  TextWrapper,
+  Heading,
+  MainText
+} from "../../../styled/pages/ServicesStyled";
 
 const ServicesMobileEng = () => {
   return (

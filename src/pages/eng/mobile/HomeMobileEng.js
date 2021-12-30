@@ -10,7 +10,7 @@ import {
   ComeAs,
   BottomText,
   NoNeed
-} from "../../../styled/mobile/HomeMobileStyled";
+} from "../../../styled/pages/HomeStyled";
 
 const HomeMobileEng = () => {
   return (
