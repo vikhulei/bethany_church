@@ -1,55 +1,23 @@
 import React from "react";
-import styled from "styled-components";
 import collage from "../../assets/collage.jpg";
+import {
+  Wrapper,
+  TitleWrapper,
+  Title,
+  TextWrapper,
+  Heading,
+  MainText,
+  PictureWrapper,
+  Picture
+} from "../../styled/pages/AboutStyled";
 
-const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  min-height: calc(100vh - 120px);
-  margin: 80px 30px;
-`;
-
-const TextWrapper = styled.div`
-  flex: 1;
-  margin-right: 50px;
-`;
-
-const TitleWrapper = styled.div`
-  text-align: center;
-  margin-bottom: 30px;
-`;
-
-const Title = styled.h1`
-  font-size: calc(2rem + 3vh);
-`;
-
-const Heading = styled.h2`
-  font-size: 1.5rem;
-  margin: 30px 0 5px;
-`;
-
-const MainText = styled.p`
-  font-size: 1.3rem;
-  margin-left: 30px;
-`;
-
-const PhotoWrapper = styled.div`
-  flex: 1;
-`;
-
-const Photo = styled.img`
-  width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-`;
-
-const AboutDesk = () => {
+const AboutMobileEng = () => {
   return (
     <Wrapper>
       <TextWrapper>
-        <TitleWrapper>
-          <Title>About Us</Title>
-        </TitleWrapper>
+      <TitleWrapper>
+        <Title>About Us</Title>
+      </TitleWrapper>
         <Heading>Affiliation</Heading>
         <MainText>Ukrainian Evangelical Church</MainText>
         <Heading>Brief History</Heading>
@@ -79,11 +47,11 @@ const AboutDesk = () => {
           and reaching out to the community
         </MainText>
       </TextWrapper>
-      <PhotoWrapper>
-        <Photo src={collage} alt="collage" />
-      </PhotoWrapper>
+      <PictureWrapper>
+        <Picture src={collage} alt="collage" />
+      </PictureWrapper>
     </Wrapper>
   );
 };
 
-export default AboutDesk;
+export default AboutMobileEng;

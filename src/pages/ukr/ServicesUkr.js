@@ -1,5 +1,5 @@
 import React from "react";
-import calendar from "../../../assets/calendar.png";
+import calendar from "../../assets/calendar.png";
 import {
   Wrapper,
   PictureWrapper,
@@ -8,9 +8,9 @@ import {
   TextWrapper,
   Heading,
   MainText
-} from "../../../styled/pages/ServicesStyled";
+} from "../../styled/pages/ServicesStyled";
 
-const ServicesMobileUkr = () => {
+const ServicesUkr = () => {
   return (
     <Wrapper>
       <PictureWrapper>
@@ -39,4 +39,4 @@ const ServicesMobileUkr = () => {
   );
 };
 
-export default ServicesMobileUkr;
+export default ServicesUkr;

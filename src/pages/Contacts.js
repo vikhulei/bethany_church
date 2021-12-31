@@ -1,23 +1,12 @@
 import React from "react";
-import ContactsMobileEng from "../pages/eng/mobile/ContactsMobileEng";
-import ContactsMobileUkr from "../pages/ukr/mobile/ContactsMobileUkr";
-import ContactsDesk from "./desktop/ContactsDesk";
+import ContactsMobileEng from "../pages/eng/ContactsEng";
+import ContactsMobileUkr from "../pages/ukr/ContactsUkr";
 
-const Contacts = ({ eng, mobileVersion }) => {
+const Contacts = ({ eng }) => {
   
   return (
     <>
-      {eng ? (
-        mobileVersion ? (
-          <ContactsMobileEng />
-        ) : (
-          <ContactsDesk />
-        )
-      ) : mobileVersion ? (
-        <ContactsMobileUkr />
-      ) : (
-        <ContactsDesk />
-      )}
+      {eng ?  <ContactsMobileEng /> : <ContactsMobileUkr /> }
     </>
   );
 };

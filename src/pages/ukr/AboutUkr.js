@@ -1,5 +1,5 @@
 import React from "react";
-import collage from "../../../assets/collage.jpg";
+import collage from "../../assets/collage.jpg";
 import {
   Wrapper,
   TitleWrapper,
@@ -9,15 +9,15 @@ import {
   MainText,
   PictureWrapper,
   Picture
-} from "../../../styled/pages/AboutStyled";
+} from "../../styled/pages/AboutStyled";
 
 const AboutMobileUkr = () => {
   return (
     <Wrapper>
+      <TextWrapper>
       <TitleWrapper>
         <Title>Про нас</Title>
       </TitleWrapper>
-      <TextWrapper>
         <Heading>Об'єднання</Heading>
         <MainText>Українська Євангельська Церква</MainText>
         <Heading>Історія коротко</Heading>

@@ -1,5 +1,5 @@
 import React from "react";
-import contact from "../../../assets/contact.png";
+import contact from "../../assets/contact.png";
 import * as FontAwesome from "react-icons/fa";
 import {
   Wrapper,
@@ -10,9 +10,9 @@ import {
   Button,
   Footer,
   Anchor
-} from "../../../styled/pages/ContactsStyled";
+} from "../../styled/pages/ContactsStyled";
 
-const ContactsMobileUkr = () => {
+const ContactsUkr = () => {
   return (
     <Wrapper>
       <Contacts src={contact} alt="contact_us" />
@@ -34,13 +34,13 @@ const ContactsMobileUkr = () => {
       </Form>
       <Footer>
         <p>+380637931590</p>
-        <a href="mailto:vikhulei@gmail.com">vikhulei@gmail.com</a>
         <Anchor href="https://www.facebook.com/bethany.nivki" target="_blank">
           <FontAwesome.FaFacebook />
         </Anchor>
+        <a href="mailto:vikhulei@gmail.com">vikhulei@gmail.com</a>
       </Footer>
     </Wrapper>
   );
 };
 
-export default ContactsMobileUkr;
+export default ContactsUkr;
