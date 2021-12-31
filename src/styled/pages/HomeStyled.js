@@ -71,6 +71,7 @@ const NoNeed = styled.p`
   text-shadow: 1px 1px 5px black, 1px 1px 5px black, 1px 1px 5px black,
     1px 1px 5px black;
   @media screen and (max-width: 600px) {
+    margin-left: 0;
     font-size: calc(1rem + 1.2vw);
   }
 `;

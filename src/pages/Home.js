@@ -1,22 +1,11 @@
 import React from "react";
-import HomeMobileEng from "../pages/eng/mobile/HomeMobileEng";
-import HomeMobileUkr from "../pages/ukr/mobile/HomeMobileUkr";
-import HomeDesk from "./desktop/HomeDesk";
+import HomeEng from "./eng/HomeEng";
+import HomeUkr from "./ukr/HomeUkr";
 
 const Home = ({ eng, mobileVersion }) => {
   return (
     <>
-      {eng ? (
-        mobileVersion ? (
-          <HomeMobileEng />
-        ) : (
-          <HomeDesk />
-        )
-      ) : mobileVersion ? (
-        <HomeMobileUkr />
-      ) : (
-        <HomeDesk />
-      )}
+      {eng ? <HomeEng mobileVersion={mobileVersion} /> : <HomeUkr mobileVersion={mobileVersion} /> }
     </>
   );
 };
