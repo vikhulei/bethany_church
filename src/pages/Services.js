@@ -1,23 +1,12 @@
 import React from "react";
-import ServicesMobileEng from "../pages/eng/mobile/ServicesMobileEng";
-import ServicesMobileUkr from "../pages/ukr/mobile/ServicesMobileUkr";
-import ServicesDesk from "./desktop/ServicesDesk";
+import ServicesEng from "../pages/eng/ServicesEng";
+import ServicesUkr from "../pages/ukr/ServicesUkr";
 
-const Services = ({ eng, mobileVersion }) => {
+const Services = ({ eng }) => {
   
   return (
     <>
-      {eng ? (
-        mobileVersion ? (
-          <ServicesMobileEng />
-        ) : (
-          <ServicesDesk />
-        )
-      ) : mobileVersion ? (
-        <ServicesMobileUkr />
-      ) : (
-        <ServicesDesk />
-      )}
+      {eng ? <ServicesEng /> :   <ServicesUkr /> }
     </>
   );
 };

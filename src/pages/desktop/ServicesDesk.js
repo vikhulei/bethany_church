@@ -3,7 +3,7 @@ import styled from "styled-components";
 import calendar from "../../assets/calendar.png";
 
 const Wrapper = styled.div`
-  min-height: calc(150vh);
+  min-height: 150vh;
   margin: 80px 10vw 0 10vw;
 `;
 
