@@ -31,7 +31,7 @@ const ServicesUkr = () => {
         <Heading>15 січня</Heading>
         <MainText>Страждання за віру сьогодні - Перше Петра</MainText>
         <Heading>22 січня</Heading>
-        <MainText>Думки про сучасну Церква з Другого Послання Петра</MainText>
+        <MainText>Думки про сучасну Церкву з Другого Послання Петра</MainText>
         <Heading>29 січня</Heading>
         <MainText>Апостол Юда про єресі </MainText>
       </TextWrapper>
