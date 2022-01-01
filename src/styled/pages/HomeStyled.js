@@ -54,7 +54,7 @@ const ComeAs = styled.p`
 
 const BottomText = styled.div`
   position: absolute;
-  bottom: 5vh;
+  bottom: 3vh;
   width: 100%;
   @media screen and (max-width: 600px) {
     bottom: 100px;
