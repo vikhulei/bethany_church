@@ -53,7 +53,7 @@ const ComeAs = styled.p`
 `;
 
 const BottomText = styled.div`
-  position: absolute;
+  position: fixed;
   bottom: 0;
   margin-bottom: 3vh;
   width: 100%;
