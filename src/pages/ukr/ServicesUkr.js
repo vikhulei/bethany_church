@@ -4,11 +4,10 @@ import {
   Wrapper,
   PictureWrapper,
   Picture,
-  Title,
+  TitleWrapper,
   TextWrapper,
-  Heading,
-  MainText
 } from "../../styled/pages/ServicesStyled";
+import {Title, Heading, MainText} from "../../styled/pages/Common"
 
 const ServicesUkr = () => {
   return (
@@ -16,6 +15,7 @@ const ServicesUkr = () => {
       <PictureWrapper>
         <Picture src={calendar} alt="calendar" />
       </PictureWrapper>
+      <TitleWrapper>
       <Title>
         Розклад
         <br />
@@ -23,6 +23,7 @@ const ServicesUkr = () => {
         <br />
         Січні 2022
       </Title>
+      </TitleWrapper>
       <TextWrapper>
         <Heading>8 січня</Heading>
         <MainText>

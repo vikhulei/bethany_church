@@ -3,13 +3,12 @@ import collage from "../../assets/collage.jpg";
 import {
   Wrapper,
   TitleWrapper,
-  Title,
   TextWrapper,
-  Heading,
-  MainText,
   PictureWrapper,
   Picture
 } from "../../styled/pages/AboutStyled";
+import {Title, Heading, MainText} from "../../styled/pages/Common"
+
 
 const AboutMobileUkr = () => {
   return (

@@ -4,11 +4,10 @@ import {
   Wrapper,
   PictureWrapper,
   Picture,
-  Title,
+  TitleWrapper,
   TextWrapper,
-  Heading,
-  MainText
 } from "../../styled/pages/ServicesStyled";
+import {Title, Heading, MainText} from "../../styled/pages/Common"
 
 const ServicesEng = () => {
   return (
@@ -16,6 +15,7 @@ const ServicesEng = () => {
       <PictureWrapper>
         <Picture src={calendar} alt="calendar" />
       </PictureWrapper>
+      <TitleWrapper>
       <Title>
         Schedule
         <br />
@@ -23,6 +23,7 @@ const ServicesEng = () => {
         <br />
         January-22
       </Title>
+      </TitleWrapper>
       <TextWrapper>
         <Heading>Jan 8</Heading>
         <MainText>Is God always love? Reflection on Epistle of John</MainText>

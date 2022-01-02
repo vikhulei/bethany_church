@@ -5,7 +5,7 @@ min-height: 150vh;
 margin: 80px 10vw 0 10vw;
 @media screen and (max-width: 600px) {
   min-height: 100vh;
-  margin: 0;
+  margin: 10px 0 0;
 }
 `
 
@@ -26,16 +26,21 @@ const Picture = styled.img`
   max-height: 100vh;
 `;
 
-const Title = styled.h1`
-position: relative;
-text-align: center;
-font-size: calc(2rem + 3vh);
-margin: 0 auto -60px auto;
-width: fit-content;
+// const TitleWrapper = styled.div`
+//   text-align: center;
+//   margin-bottom: 30px;
+// @media screen and (max-width: 600px) {
+//   text-align: left;
+//   margin: 0 0 0 20px;
+// }
+// `;
+
+const TitleWrapper = styled.div`
+  text-align: center;
+  margin-bottom: 30px;
 @media screen and (max-width: 600px) {
   text-align: left;
-  margin: 20px;
-  font-size: calc(2rem + 2vw);
+  margin: 0 0 0 20px;
 }
 `;
 
@@ -48,24 +53,5 @@ text-align: center;
 }
 `;
 
-const Heading = styled.h2`
-font-size: 2rem;
-margin: 50px 0 5px;
-@media screen and (max-width: 600px) {
-  font-size: 1.5rem;
-  margin: 0;
-}
-`;
 
-const MainText = styled.p`
-  
-font-size: 1.5rem;
-margin-left: 30px;
-@media screen and (max-width: 600px) {
-  font-size: 1rem;
-  margin: 0 0 20px 0;
-}
-`;
-
-
-export {Wrapper, PictureWrapper, Picture, Title, TextWrapper, Heading, MainText};
+export {Wrapper, PictureWrapper, Picture, TitleWrapper, TextWrapper};
