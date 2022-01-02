@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contacts from "./pages/Contacts";
 import Lang from "./components/Language";
+// import handleResize from "./functions/HandleResize";
 
 const Wrapper = styled.div`
   background-color: lightgrey;
@@ -36,14 +37,16 @@ export default function App() {
     setEng(!eng);
   };
 
+  const handleResize = () => {
+    if (window.innerWidth > 600) {
+      setMobileVersion(false);
+    } else {
+      setMobileVersion(true);
+    }
+  };
+
+
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 600) {
-        setMobileVersion(false);
-      } else {
-        setMobileVersion(true);
-      }
-    };
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);

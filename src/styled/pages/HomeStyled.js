@@ -57,7 +57,6 @@ const BottomText = styled.div`
   top: 73vh;
   width: 100%;
   @media screen and (max-width: 600px) {
-    // bottom: 100px;
     width: 100%;
     color: white;
   }
