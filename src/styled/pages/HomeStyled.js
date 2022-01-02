@@ -53,11 +53,9 @@ const ComeAs = styled.p`
 `;
 
 const BottomText = styled.div`
-  position: fixed;
-  bottom: 0;
-  margin-bottom: 3vh;
+  position: absolute;
+  top: 73vh;
   width: 100%;
-  background-color: lightcoral;
   @media screen and (max-width: 600px) {
     // bottom: 100px;
     width: 100%;
