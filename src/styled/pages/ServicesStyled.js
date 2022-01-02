@@ -30,10 +30,11 @@ const Title = styled.h1`
 position: relative;
 text-align: center;
 font-size: calc(2rem + 3vh);
-margin-bottom: -60px;
+margin: 0 auto -60px auto;
+width: fit-content;
 @media screen and (max-width: 600px) {
   text-align: left;
-  margin: 20px 20px 0 20px;
+  margin: 20px;
   font-size: calc(2rem + 2vw);
 }
 `;
