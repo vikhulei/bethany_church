@@ -53,6 +53,7 @@ font-size: 1rem;
 background-color: white;
 border-radius: 10px;
 border: none;
+resize: none;
 &:focus {
   outline: none;
 }
