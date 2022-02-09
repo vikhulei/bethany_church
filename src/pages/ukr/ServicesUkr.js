@@ -21,20 +21,20 @@ const ServicesUkr = () => {
         <br />
         Служінь в
         <br />
-        Січні 2022
+        Лютому 2022
       </Title>
       </TitleWrapper>
       <TextWrapper>
-        <Heading>8 січня</Heading>
+        <Heading>5 лютого</Heading>
         <MainText>
-          Чи завжди Бог любов? Роздуми над Першим Посланням Івана
+        Апостол Юда про єресі 
         </MainText>
-        <Heading>15 січня</Heading>
-        <MainText>Страждання за віру сьогодні - Перше Петра</MainText>
-        <Heading>22 січня</Heading>
-        <MainText>Думки про сучасну Церкву з Другого Послання Петра</MainText>
-        <Heading>29 січня</Heading>
-        <MainText>Апостол Юда про єресі </MainText>
+        <Heading>12 лютого</Heading>
+        <MainText>Договір між Богом і людьми - книга Єремії</MainText>
+        <Heading>19 лютого</Heading>
+        <MainText>Стрітення Господнє</MainText>
+        <Heading>26 лютого</Heading>
+        <MainText>Урок від Рут: чеснота вірності</MainText>
       </TextWrapper>
     </Wrapper>
   );
