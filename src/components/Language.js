@@ -5,17 +5,13 @@ const SelectLang = styled.div`
   position: absolute;
   right: 10px;
   top: 60px;
-  @media screen and (min-width: 600px) {
-    right: 30px;
-    top: 45px;
-  }
+  width: 65px;
   font-weight: 600;
   font-size: 0.9rem;
   color: black;
   text-align: center;
   padding: 3px;
-  background-color: rgb(180, 180, 180);
-  width: 65px;
+  background-color: rgb(180, 180, 180);  
   &:hover {
     cursor: pointer;
   }
@@ -23,6 +19,10 @@ const SelectLang = styled.div`
     transform: translate(2px, 2px);
   }
   z-index: 99;
+  @media screen and (min-width: 600px) {
+    right: 30px;
+    top: 45px;
+  }
 `;
 
 const Lang = ({ setEnglish }) => {
