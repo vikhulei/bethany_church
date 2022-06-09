@@ -11,7 +11,6 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contacts from "./pages/Contacts";
 import Lang from "./components/Language";
-// import handleResize from "./functions/HandleResize";
 
 const Wrapper = styled.div`
   background-color: lightgrey;
@@ -44,7 +43,6 @@ export default function App() {
       setMobileVersion(true);
     }
   };
-
 
   useEffect(() => {
     handleResize();
