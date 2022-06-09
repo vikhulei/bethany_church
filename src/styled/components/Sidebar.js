@@ -40,7 +40,7 @@ const SideNavLink = styled(Link)`
     color: darkblue;
     transform: translate(3px, 3px);
   }
-
+  // This is to remove the tab color change when pressing/tapping it
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
